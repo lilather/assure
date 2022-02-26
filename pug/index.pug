@@ -1,25 +1,84 @@
 extends template.pug
 block title&description
-block bodyTag 
+block bodyTag
+ -var bodyTag="home"
+ body(id=`${bodyTag}`) 
 block content 
  .banner.container-fluid
-  .row.align-items-center.flex-wrap
-   .col-6 
-    img(src="./img/assure-banner-img.png", alt="")
-   .col-5
+  .row.align-items-center
+   .col-xl-6(data-aos="fade-right" data-aos-duration="1000").col-lg-12
+    img(src="./img/AdobeStock_109401734.png", alt="") 
+   .col-xl-5(data-aos="fade-left" data-aos-duration="1000").col-lg-12
     .banner-title Assure Studios 
     h1 Our Mission is to help small businesses and churches grow and prosper through digital marketing strategies
  .wrapper
   .section.intro.container-fluid 
-   .row.align-items-center.flex-wrap
-    .col-6
+   .row.align-items-center.flex-wrap-reverse
+    .col-xl-6(data-aos="fade-left" data-aos-duration="1000").col-lg-12
      h2 We Are A Digital Marketing Company
      p Assure Studios is based out of Dallas, Texas. Our Mission is to help small businesses and churches grow and prosper through Digital Marketing Strategies. We offer social media management, social media marketing, and web development.
      p There is no quick fix to digital marketing. Digital marketing takes time and patience. Assure Studios create realistic smart goals and weekly reports. So that you know your money is not being wasted
-    .col-6 
-     img(src="./img/assure-banner-img.png", alt="")
+    .col-xl-6(data-aos="fade-left" data-aos-duration="1000").col-lg-12
+     img(src="./img/digital-marketing-1200.jpg", alt="")
+  .section(data-aos="zoom-in-right").section-black.container-fluid 
+   .row.align-items-center
+    .col-lg-12.col-xl-6
+     h2 A Results Driven Company
+     p When it comes to digital marketing  it’s all about the results. We create plans developed around simple-to-understand and measurable smart goals. We work with you to help build your brand and your business.
+     p All the strategies that Assure Studios employ work together to generate traffic for your website, create brand awareness, and transform website visitors into customers.
+    .col-lg-12.col-xl-6
+     img(src="./img/digital-marketing-work-1200.jpg", alt="")
+  .section(data-aos="zoom-in-right").container-fluid
+   .row.justify-content-center.flex-wrap
+    .col-xl-9.col-lg-12.why_we_different
+     h2(style="animation-delay:1s")  Why were Different
+     p Our Unique selling position is we care about your business and want all of our customers to succeed. 
+      span.font-weight-bold We exhibit this by: 
+     ul 
+      li Pricing our services competitively.
+      li Offering free consultations.
+      li Offering free website performance and, SEO audits.
+      li We give tons of freebies from blog posts to dev and marketing checklists
+      li We put your business before profits and do all we can to make sure you are on the right check to digital marketing success.
+  .section.container-fluid
+   .row.justify-content-between
+    h2(data-aos="zoom-in-down") Solutions That Help Grow Your Business
 
+    .card(data-aos="zoom-in-up").col-xl-4.col-lg-12
+     .card-icon
+      img(src="./img/digital marketing-icon.svg", alt="")
+     h3 Digital Marketing
+     p Digital marketing is the use of the internet to display advertising, and use channels to reach, connect and engage with customers.
+     button.button.assure-button Learn More
+    .card(data-aos="zoom-in-down").col-xl-4.col-lg-12
+     .card-icon
+      img(src="./img/seo-icon.svg", alt="")
+     h3 SEO 
+     p Search Engine Optimisation or SEO is the activity of assuring a website can easily be found in search engines When people are looking for products or services your business offers
+     button.button.assure-button Learn More
+    .card(data-aos="zoom-in-up").col-xl-4.col-lg-12
+     .card-icon
+      img(src="./img/web-dev-icon.svg", alt="")
 
-
-
+     h3 Website Optimization
+     p Website optimization is about improving your websites user experience so that people will be more likely to convert goals on your website.
+     button.button.assure-button Learn More
+  .section.container-fluid(data-aos="zoom-in-up") 
+   .row 
+    h2 Latest blog
+    .blog
+     h3 Five Social Media Tips For Churches 
+     .blog-date December 13 2021
+     .blog-author By 
+      | <span><a href="#">John Moore</a></span> 
+     p Tips To help your church with its social media process. These tips will help your church’s social media process and help your church create a roadmap for success. Read More…
+  .section.callToAction.container-fluid(data-aos="zoom-in-down") 
+   .row
+    h2 Ready To Chat About Digital Marketing.
+    .col-xl-8.col-lg-12
+       input(type="text" placeholder="Please Enter Your Email")
+    .col-xl-4.col-lg-12
+       button.button.assure-button lets chat
+    
+     
 

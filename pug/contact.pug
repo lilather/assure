@@ -1,0 +1,41 @@
+extends template.pug
+block title&description
+block bodyTag
+ -var bodyTag="contact"
+ body(id=`${bodyTag}`)  
+block content
+ .wrapper
+  hr.mt-5
+  .containe(rdata-aos="fade-up", data-aos-anchor-placement="top-bottom").mt-5.mb-5
+
+    form#contactForm
+     .row.justify-content-center
+      h1 Please Drop Us A Line
+      h2.mb-4 If You Have Any Comments Questions Or Concerns?
+       |  Fill Out The Form Below 
+       br
+       | Or Call 972 898-7128 And Leave A Message
+      .col-12
+        label(for="full_name") Your Name
+        input.input-form(id ="full_name" ,type="text" required)
+        .inputError 
+      .col-12
+        label(for="phone") Your Phone
+        input.input-form(id ="phone", type="tel")
+        .inputError
+
+      .col-12
+        label(for="email") Your Email
+        input.input-form(id="email" , type="email")
+        .inputError 
+
+      .col-12
+        label(for="message") Leave a Message
+        textarea.input-form(id ="contactMessage", name="", cols="30", rows="10")
+        .inputError 
+
+      .col-12.mt-3
+        input(id="contactSubmit" ,type="submit", value="submit").button.assure-button 
+      #submitMessage 
+block append scripts
+ script(src="js/contact.js")

@@ -6,7 +6,11 @@ const sass = require('gulp-sass')(require('sass'));
 
 
 function pug() {
-  return src('./pug/*.pug').pipe(plugins.pug()).pipe(dest('./'))
+  return src('./pug/**/*.pug').pipe(plugins.pug()).pipe(dest('./'))
+}
+
+function pug_portfolio() {
+  return src('./pug/portfolio/*.pug').pipe(plugins.pug()).pipe(dest('./portfolio'))
 }
 
  function scss() {
@@ -68,7 +72,7 @@ done();
 
   
 exports.watch= watchDev;
-
+exports.pp =pug_portfolio;
  exports.pug=pug;
  exports.sass=scss;
  

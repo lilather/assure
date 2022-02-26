@@ -5,10 +5,14 @@ var navBar=document.querySelector('.nav-bar');
 var overlay=document.querySelector(".overlay");
 var mobileClose=document.querySelector(".mobile-close");
 var body=document.getElementsByTagName('body')[0];
+let links=document.querySelectorAll(".nav-link");
+
+
 window.onscroll = function () { 
-  console.log(window.scrollY)
+
     "use strict";
-    if (window.scrollY >= 700 ) {
+
+    if (window.scrollY >= 700 && window.innerWidth >700 ) {
         myNav.classList.add("headerScroll");
         myNav.classList.remove("headerTop");
     } 
@@ -32,6 +36,7 @@ overlay.classList.add("overlayOn");
 navBar.classList.add("moveMobileNav");
 body.classList.add("hideScrollBar");
 myNav.classList.remove("headerScroll");
+addMenuLink();
 
 }
 
@@ -41,5 +46,14 @@ function closeMobileMenu(){
 overlay.classList.remove("overlayOn");
 navBar.classList.remove("moveMobileNav");
 body.classList.remove("hideScrollBar");
+
+removeMenuLink();
+}
+
+
+function addMenuLink(){
+
+}
+function removeMenuLink(){
 
 }

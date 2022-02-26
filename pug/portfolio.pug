@@ -1,0 +1,25 @@
+extends template.pug
+block title&description
+block bodyTag
+  -var bodyTag="portfolio"
+  body(id=`${bodyTag}`)  
+block content 
+ .banner.container-fluid
+ .wrapper
+  .section.portfolio-intro.container-fluid 
+   h2 Our Simple Portfolio
+   h3.mb-5 The portfolio shows of our work our creative style and our ability to create clean responsive websites
+   .row 
+    .col-xl-4.portfolio-item(data-aos="fade-up",data-aos-delay="500")
+     a(href="./portfolio/dallas-missionary-church-version-one.html")
+      img(src="./img/dallas-mission-v1-ipad-iphone@2x-1-1024x950.png")
+     h3 Dallas Missionary Church Version One 
+    .col-xl-4.portfolio-item(data-aos="fade-up",data-aos-delay="800")
+     a(href="./portfolio/dallas-missionary-church-version-two.html")
+      img(src="./img/dallas-mission-v2-ipad-iphone@2x-1-1024x950.png")
+     h3 Dallas Missionary Church Version Two 
+    .col-xl-4.portfolio-item(data-aos="fade-up",data-aos-delay="1200")     
+      a(href="./portfolio/dallas-missionary-church-version-three.html")
+       img(src="./img/dallas-mission-v3-ipad-iphone@2x-1-1024x950.png") 
+       h3 Dallas Missionary Church Version Three
+
