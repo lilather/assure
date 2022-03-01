@@ -26,6 +26,7 @@ html {
   overflow: none;
   font-size: 21px;
   font-family: 'open sans';
+  color: #888888;
 }
 
 .wrapper {
@@ -45,7 +46,7 @@ h5 {
   margin-block-start: 0px !important;
   margin-bottom: 20px !important;
   margin-top: 20px !important;
-
+  color: #000;
 }
 
 h1 {
@@ -89,14 +90,17 @@ header {
   --animate-duration: 4s;
   cursor: pointer;
   transition: opacity 0.4s;
+  font-size: 0.9rem;
 
   a {
     color: $grey-bg;
     font-weight: 600;
+    text-decoration: none;
   }
 
   a:hover {
     color: $highlight-color !important;
+    text-decoration: underline;
   }
 
   hr {
@@ -123,11 +127,17 @@ header {
   transform: translateY(0px);
   top: 0px;
   color: #fff;
-}
 
-.headerScroll .mobile-menu-toggler {
+ .mobile-menu-toggler {
   fill: #fff;
   transition: all 0.4s;
+}
+.logo a:link{
+color: #fff !important;
+}
+.logo a:visited{
+  color: #fff !important;
+  }
 }
 
 .logo a:link {
@@ -141,6 +151,10 @@ header {
 .logo span {
   padding-left: 30px;
 
+}
+
+.logo a:visited {
+  color: #000 !important;
 }
 
 .headerScroll a {
@@ -168,6 +182,9 @@ header {
     font-size: 3.8rem;
     line-height: 120px;
 
+  }
+  h1{
+    color: #fff;
   }
 }
 
@@ -226,8 +243,11 @@ header {
 .section-black {
   background-color: $grey-bg;
   color: #fff;
-  padding: 30px 50px;
+  padding: 75px;
 
+  h2 {
+    color: #fff;
+  }
 }
 
 .why_we_different ul {
@@ -284,9 +304,9 @@ header {
   color: white;
   padding: 4%;
 
-}
+h3 {
+  color: #fff !important;
 
-.blog h3 {
   font-size: 3rem;
 }
 
@@ -298,6 +318,7 @@ header {
 .blog-author a {
   color: $highlight-color;
   font-weight: bold
+}
 }
 
 footer {
@@ -414,7 +435,7 @@ p.brandingLogo {
 
 .offer h4 {
   margin-bottom: 5px !important;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .offer h3 {
@@ -587,12 +608,11 @@ p.brandingLogo {
 
   .blog {
     height: 500px;
-  }
 
-  .blog h3 {
+    h3 {
+      font-size: 1.7rem;
 
-    font-size: 1.7rem;
-
+    }
   }
 
   .callToAction .row {
@@ -601,21 +621,21 @@ p.brandingLogo {
 
   #mc_embed_signup_scroll {
     text-align: left;
-  }
+  
 
-  #mc_embed_signup_scroll .button {
+  .button {
     margin: 40px 0px !important;
   }
 
-  #mc_embed_signup_scroll .dflex {
+ .dflex {
     text-align: center;
     flex-wrap: wrap;
   }
 
-  #mc_embed_signup_scroll label {
+  label {
     font-size: 34px !important;
   }
-
+  }
   .social {
     margin: 75px 0px;
   }
@@ -634,7 +654,7 @@ p.brandingLogo {
 
   .banner-title {
     font-size: 2.5rem !important;
-    line-height: 60px !important;
+    line-height: 40px !important;
   }
 
   .moveMobileNav {
@@ -668,6 +688,7 @@ p.brandingLogo {
 
   .section-black {
     padding: 15px 25px;
+
   }
 }
 
@@ -740,25 +761,29 @@ p.brandingLogo {
   display: block;
   min-height: 40px;
   min-width: 130px;
-  
+
 
 }
 
 #contact form .row {
-margin:0 auto}
+  margin: 0 auto
+}
 
 #contact label {
   display: block;
-  margin-top:45px
-
+  margin-top: 45px
 }
-#contact h1, #contact h2{
+
+#contact h1,
+#contact h2 {
   text-align: center;
 }
-#contact h1{
+
+#contact h1 {
   font-size: 45px;
 }
-#contact h2{
+
+#contact h2 {
   font-size: 22px;
 }
 
@@ -776,4 +801,25 @@ margin:0 auto}
 .reqError {
   border: 1px solid #eb6755;
   font-size: 1.4rem;
+}
+
+
+.noBanner {
+  h1 {
+    margin-top: 100px !important;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+#about .banner{
+
 }
