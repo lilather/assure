@@ -1,11 +1,30 @@
 @import './color.scss';
 
+
+.hide{
+  opacity: 0;
+  transition-duration: 1s;
+  visibility: hidden;
+}
+#backToTop svg{
+  transition-duration: 1s;
+  opacity: 1;
+  position:fixed;
+  width:50px;
+  bottom:20px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#backToTop svg:hover{
+opacity: 0.7;
+}
 .logo img {
   width: 13%;
 }
 
-.row>* {
-  padding-left: 0px
+#home .banner .row{
+  max-width: 2400px;
 }
 
 .no-border {
@@ -23,16 +42,17 @@ html {
   padding: 0;
   height: 100%;
   min-height: 100%;
-  overflow: none;
   font-size: 21px;
-  font-family: 'open sans';
-  color: #888888;
+  font-family: sofia-pro, sans-serif;
+  color: $grey-bg;
+  font-display: fallback;
+
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1500px;
-  padding: 0px 30px
+  max-width: 1400px;
+  padding: 0 30px
 }
 
 h1,
@@ -40,27 +60,42 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Raleway;
-  font-weight: 500;
-  margin-block-end: 0px !important;
-  margin-block-start: 0px !important;
-  margin-bottom: 20px !important;
-  margin-top: 20px !important;
-  color: #000;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 60px;
+  font-family: Raleway ,sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px ;
+  color: $grey-bg;
   text-transform: capitalize;
 }
 
-h3 {
-  font-size: 25px;
 
+h1{
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+.banner h1 {
+  font-size: 36px;
+  font-weight: normal;
+}
+h1{
+margin-top:75px;
+
+}
+
+
+h3 {
+  font-size: 1.7rem;
+
+}
+
+h4{
+  font-size: 1.4rem;
+}
+h5{
+  font-size: 1.2rem;
 }
 
 header {
@@ -69,7 +104,7 @@ header {
   height: 110px;
   display: flex;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0 15px;
   box-sizing: border-box;
   z-index: 3000;
 }
@@ -77,13 +112,13 @@ header {
 .nav-bar {
   display: flex;
   margin-left: auto;
-  padding: 0px 2%;
+  padding: 0 2%;
   flex-direction: row;
 
 }
 
 .nav-link {
-  margin: 0px 5px;
+  margin: 0 5px;
   text-transform: uppercase;
   padding: 1rem 0.7rem;
   --animate-delay: 1.4s;
@@ -121,11 +156,11 @@ header {
 }
 
 .headerScroll {
-  background-color: $grey-bg;
+  background-color:$dark-bg;
   position: fixed;
   transition: all 1s;
   transform: translateY(0px);
-  top: 0px;
+  top: 0;
   color: #fff;
 
  .mobile-menu-toggler {
@@ -138,13 +173,17 @@ color: #fff !important;
 .logo a:visited{
   color: #fff !important;
   }
+  .logo img {
+    width: 9%;
+  }
+
 }
 
 .logo a:link {
   font-size: 1.7rem;
   color: $grey-bg;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 600;
 }
 
@@ -176,15 +215,18 @@ color: #fff !important;
   flex-direction: column;
   color: #fff;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 
   .banner-title {
     font-size: 3.8rem;
     line-height: 120px;
+    text-align: left;
 
   }
   h1{
     color: #fff;
+    margin-top:10px;
+    font-weight: bold;
   }
 }
 
@@ -229,21 +271,35 @@ color: #fff !important;
   opacity: 0;
   margin-bottom: 30px;
   font-size: 1.7rem;
-  font-family: raleway;
+  font-family: raleway ,sans-serif;
   font-weight: 600;
   width: fit-content;
 }
 
 .section {
-  margin: 150px 0px;
+  margin: 150px 0;
   padding: 7% 5%;
 
 }
+.content-section{
+  h2{
+    font-size: 2.4rem;
+  }
+h3 {
+  font-size: 1.4rem;
+}
+  h4{
+    font-size: 1rem;
+    color: $highlight-color;
+  }
+  margin: 50px 0;
+  padding: 2%;
+}
 
 .section-black {
-  background-color: $grey-bg;
+  background-color: $dark-bg;
   color: #fff;
-  padding: 75px;
+  padding: 35px;
 
   h2 {
     color: #fff;
@@ -254,9 +310,12 @@ color: #fff !important;
   padding-left: 15px;
 }
 
+
+
 .why_we_different li {
-  margin: 25px 0px;
+  margin: 25px 0;
   text-align: left;
+  list-style: none;
 }
 
 .why_we_different {
@@ -267,6 +326,7 @@ color: #fff !important;
   max-width: 100%;
 }
 
+
 .card {
   padding: 4%;
   display: flex;
@@ -274,9 +334,10 @@ color: #fff !important;
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 18px;}
+.card-emphasis{
+  font-size: 1.2rem !important;
 }
-
 .assure-button {
   width: 250px !important;
   height: 80px !important;
@@ -285,7 +346,13 @@ color: #fff !important;
   color: white !important;
   border: none !important;
   font-size: 21px;
+  text-transform: capitalize;
 
+}
+
+
+.assure-button:hover{
+  background-color: #cd4235 !important;
 }
 
 .card button {
@@ -325,7 +392,7 @@ footer {
   text-align: center;
   padding-top: 5%;
   padding-bottom: 3%;
-  background-color: $grey-bg;
+  background-color: $dark-bg;
 }
 
 #mc_embed_signup form {
@@ -343,7 +410,7 @@ footer {
 }
 
 #mc_embed_signup_scroll label {
-  font-family: raleway;
+  font-family: raleway ,sans-serif;
   font-size: 2rem !important;
 }
 
@@ -368,19 +435,15 @@ p.brandingLogo {
 .callToAction {
   border: thin solid #000;
   border-radius: 10px;
-  width: 100%;
+  width: 97%;
+  padding:45px 5%;
+  max-width:1200px ;
+  margin: 100px auto 100px auto;
 
   h2 {
     font-size: 1.7em;
   }
 
-  input[type="text"] {
-    width: 100%;
-  }
-
-  input {
-    height: 75px;
-  }
 
   .button {
     margin-left: 15px;
@@ -411,7 +474,7 @@ p.brandingLogo {
   }
 
   .copyright {
-    margin: 75px 0px 5px 0px;
+    margin: 75px 0 5px 0;
   }
 
   .copyright p {
@@ -429,30 +492,50 @@ p.brandingLogo {
   font-size: 2rem;
 }
 
-.offer h3 {
-  font-size: 1.5rem;
-}
 
 .offer h4 {
   margin-bottom: 5px !important;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
 }
 
 .offer h3 {
-  font-size: 1rem !important;
+  font-size: 3rem !important;
+  font-weight: 600 !important
+
 }
 
+.offer ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.offer li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $highlight-color; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.offer h5{
+  font-size:1rem ;
+}
 .card-offer {
   padding: 40px 15px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .card-offer li {
   text-transform: capitalize;
-  font-size: 0.8rem
+  font-size: 0.8rem;
+  padding: 0.2rem;
 }
 
+.card ul{
+  padding-inline-start: 15px;
+}
 .price {
   text-transform: capitalize;
   font-size: 18px;
@@ -460,14 +543,13 @@ p.brandingLogo {
 }
 
 .price span {
-  font-weight: 500;
   color: $highlight-color;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .img-border {
   border: thin solid #000;
-  ;
+
 }
 
 .portfolio-item {
@@ -480,8 +562,147 @@ p.brandingLogo {
 
 .portfolio-item h3 {
   text-align: center !important;
+  font-weight: 300;
+}
+.noBanner {
+  h1 {
+    margin-top: 100px !important;
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 1.7rem !important;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+  }
 }
 
+@media (max-width:800px) {
+
+  .wrapper {
+    padding: 0 2%
+  }
+
+
+  .banner h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    max-width: 500px;
+  }
+
+  .blog {
+    height: 500px;
+
+    h3 {
+      font-size: 1.7rem;
+
+    }
+  }
+
+  .callToAction .row {
+    flex-wrap: wrap;
+  }
+
+  #mc_embed_signup_scroll {
+    text-align: left;
+
+
+    .button {
+      margin: 40px 0 !important;
+    }
+
+    .dflex {
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    label {
+      font-size: 34px !important;
+    }
+  }
+  .social {
+    margin: 75px 0;
+  }
+
+  .social a {
+    display: block;
+    margin: 20px 0;
+
+  }
+}
+@media (max-width:500px) {
+  body {
+    font-size: 16px;
+  }
+
+  .banner{
+
+    .banner-title {
+      font-size: 2.2rem !important;
+      line-height: 60px !important;
+
+    }
+    h1 {
+      font-size:1rem;
+      font-weight: lighter;
+    }
+  }
+
+  .moveMobileNav {
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+  h2 {
+    font-size:1.2rem;
+  }
+
+  .wrapper {
+    padding: 0 5px
+  }
+
+  .section {
+    margin: 30px 0
+  }
+
+  .callToAction {
+    border: none;
+    text-align: center;
+  }
+  .callToAction h2{
+    margin-bottom: 25px ;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .section-black {
+    padding: 30px 10px;
+
+  }
+  .noBanner {
+    h1 {
+      margin-top: 100px !important;
+      font-size: 1.5rem !important;
+    }
+
+    h2 {
+      font-size: 1rem !important;
+    }
+
+    h3 {
+      font-size: 0.8rem !important;
+    }
+  }
+}
 @media (min-width: 1200px) {
 
   .card.col-xl-4 {
@@ -495,14 +716,17 @@ p.brandingLogo {
 
 
 }
-
 @media (max-width: 1200px) {
+  .banner-title {
+    font-size: 3.8rem;
+    line-height: 120px;
 
+  }
   .nav-bar {
     width: 60%;
     background-color: #fff;
     position: fixed;
-    top: 0px;
+    top: 0;
     right: -2000px;
     height: 100vh;
     flex-direction: column;
@@ -557,13 +781,12 @@ p.brandingLogo {
   }
 
   .banner {
-    height: auto;
     padding: 75px 40px;
     text-align: center;
   }
 
   .wrapper {
-    padding: 0% 2%
+    padding: 0 2%
   }
 
 
@@ -581,117 +804,31 @@ p.brandingLogo {
   }
 
   .section {
-    margin: 50px 0px;
+    margin: 50px 0;
   }
 
   .callToAction .button {
-    margin: 30px 0px;
+    margin: 30px 0;
   }
 
 }
-
-@media (max-width:800px) {
-
-  .wrapper {
-    padding: 0% 2%
-  }
-
-
-  .banner h1 {
-    font-size: 27px;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-    max-width: 500px;
-  }
-
-  .blog {
-    height: 500px;
-
-    h3 {
-      font-size: 1.7rem;
-
+@media (max-width: 1400px) {
+  .banner{
+    height: fit-content;
+    padding-bottom: 11%;
+    .banner-title{
+      text-align:center !important;
     }
-  }
 
-  .callToAction .row {
-    flex-wrap: wrap;
-  }
+  }}
 
-  #mc_embed_signup_scroll {
-    text-align: left;
-  
 
-  .button {
-    margin: 40px 0px !important;
-  }
 
- .dflex {
-    text-align: center;
-    flex-wrap: wrap;
-  }
 
-  label {
-    font-size: 34px !important;
-  }
-  }
-  .social {
-    margin: 75px 0px;
-  }
 
-  .social a {
-    display: block;
-    margin: 20px 0px;
-
-  }
+#portfolio-piece h1 {
+  font-size: 1.3rem;
 }
-
-@media (max-width:500px) {
-  body {
-    font-size: 16px;
-  }
-
-  .banner-title {
-    font-size: 2.5rem !important;
-    line-height: 40px !important;
-  }
-
-  .moveMobileNav {
-    height: 100%;
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 20px !important;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  .wrapper {
-    padding: 0px 15px
-  }
-
-  .section {
-    margin: 30px 0px
-  }
-
-  .callToAction {
-    border: none;
-  }
-
-  .logo span {
-    display: none;
-  }
-
-  .section-black {
-    padding: 15px 25px;
-
-  }
-}
-
 .project-image img {
   border: #000 thin solid
 }
@@ -715,14 +852,14 @@ p.brandingLogo {
 
 .project-num {
   font-size: 6rem;
-  font-family: Raleway;
+  font-family: Raleway ,sans-serif;
   font-weight: bold;
   color: #000;
 }
 
 .project-title {
   font-size: 2.5rem;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   color: #000;
   text-transform: uppercase;
   font-weight: 800;
@@ -732,7 +869,7 @@ p.brandingLogo {
 
 .project-title-mockup {
   font-size: 1.4rem;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   color: #000;
   text-transform: uppercase;
   font-weight: 800;
@@ -745,9 +882,8 @@ p.brandingLogo {
 }
 
 .typo-box {
-  margin: 40px 0px;
+  margin: 40px 0;
 }
-
 #contact form input,
 #contact form textarea {
   width: 100%;
@@ -756,14 +892,14 @@ p.brandingLogo {
 #contact input[type=text],
 #contact input[type=email],
 #contact input[type=tel] {
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  font-family: sofia-pro, sans-serif;
   font-size: 15px;
   display: block;
   min-height: 40px;
   min-width: 130px;
 
-
 }
+
 
 #contact form .row {
   margin: 0 auto
@@ -783,9 +919,6 @@ p.brandingLogo {
   font-size: 45px;
 }
 
-#contact h2 {
-  font-size: 22px;
-}
 
 .inputError {
   flex-direction: column;
@@ -803,23 +936,31 @@ p.brandingLogo {
   font-size: 1.4rem;
 }
 
+#submitMessage{
+  margin:30px 0px
+}
+.about-intro .row{
+  align-items: center;
+}
+#about .banner .row{
+justify-items: center;
+text-align: center;
+}
+#about .card{
+  margin:7px;
+}
+#about h1 span{
+font-size: 4rem}
+.talents{
+  height: min-content;
+  padding:2%;
+}
+.talents a{
+  color: #eb6755;
 
-.noBanner {
-  h1 {
-    margin-top: 100px !important;
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
+}
+.talents div {
+  padding-bottom:5px;
 }
 
 
-#about .banner{
-
-}

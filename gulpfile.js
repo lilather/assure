@@ -4,10 +4,11 @@ const {
   dest
 } = require('gulp');
 const gulp = require('gulp');
-var browserSync = require("browser-sync").create();
+const browserSync = require("browser-sync").create();
 const plugins = require('gulp-load-plugins')();
 const sass = require('gulp-sass')(require('sass'));
-const imagemin = import('gulp-imagemin')
+const workboxBuild = require('workbox-build');
+
 function pug() {
   return src('./pug/**/*.pug').pipe(plugins.pug()).pipe(dest('./'))
 }
@@ -18,9 +19,13 @@ function pug_portfolio() {
 
 function scss() {
   // body omitted
-  return src('./sass/*.scss').pipe(sass()).pipe(dest('./css/'))
+  return src('./sass/*.scss').pipe(sass({outputStyle: 'compressed'})).pipe(dest('./css/'))
 }
 
+function uglifyJs(){
+  return src('./js/*.js').pipe(plugins.uglify()).pipe(dest('./js/'))
+
+}
 function webP() {
   return src('./img/**/*')
     .pipe(plugins.webp())
@@ -28,7 +33,18 @@ function webP() {
 }
 
 function imgMin(){
-  return src('/img/*').pipe(imagemin).pipe(dest('/img'))
+  return src('./img/*').pipe(plugins.imagemin([plugins.imagemin.mozjpeg({quality: 75, progressive: true}),
+    plugins.imagemin.optipng({optimizationLevel: 5}),])).pipe(dest('./img/'))
+}
+
+function gSW(){
+  return workboxBuild.generateSW({
+    globDirectory: './',
+    globPatterns: [
+      '**/*.{html,json,js,css}',
+    ],
+    swDest: './sw.js',
+  });
 }
 /*
 function css() {
@@ -56,19 +72,19 @@ function zip(){
 return src("./*").pipe(plugins.zip(sitename+".zip")).pipe(gulp.dest("../"))
 }
 
+
+*/
 function sitemap(){
-  return src("./prod/*.html", {
+  return src("./*.html", {
     read: false,
   })
-  .pipe(
-    plugins.sitemap({
-      siteUrl:sitename,
-    })
-  )
-  .pipe(gulp.dest("./prod/"));
+    .pipe(
+      plugins.sitemap({
+        siteUrl:"https://www.assurestudios.com",
+      })
+    )
+    .pipe(gulp.dest("./"));
 }
-*/
-
 
 function watchDev(done) {
   browserSync.init({
@@ -76,11 +92,15 @@ function watchDev(done) {
       baseDir: '.'
     }
   });
-  plugins.watch('./sass/*.scss', scss).on('change', browserSync.reload);;
+  plugins.watch('./js/*.js', uglifyJs()).on('change', browserSync.reload);
+
+  plugins.watch('./sass/*.scss', scss).on('change', browserSync.reload);
   plugins.watch('./pug/*.pug', pug).on('change', browserSync.reload);
   done();
 }
-
+exports.sitemap=sitemap;
+exports.gSW=gSW;
+exports.uglifyJs=uglifyJs;
 exports.imgMin=imgMin;
 exports.webP=webP;
 exports.watch = watchDev;

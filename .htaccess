@@ -4,11 +4,11 @@
 
 # Force clients to use https
 RewriteCond %{HTTPS} !=on
-RewriteRule (.*) https://https://assurestudios.com/$1 [R=301,L]
+RewriteRule (.*) https://assurestudios.com/$1 [R=301,L]
 
 # Redirect from www.
-RewriteCond %{HTTP_HOST} ^www.https://assurestudios.com$
-RewriteRule (.*) https://https://assurestudios.com/$1 [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.assurestudios.com$
+RewriteRule (.*) https://assurestudios.com/$1 [R=301,L]
 
 # Redirect Urls (Permanent)
 RewriteRule ^about\-page/$  https://assurestudios.com/about.html [R=301,L]
@@ -29,7 +29,6 @@ RewriteRule ^blog/$  https://assure-studios.blogspot.com/ [R=301,L]
 # Redirect Urls (Permanent)
 RewriteRule ^church\-post\-ideas/$  https://assure-studios.blogspot.com/2022/03/22-church-social-media-post-ideas.html [R=301,L]
 
-
 # Redirect Urls (Permanent)
 RewriteRule ^2021/05/06/make\-sure\-your\-church\-web\-site\-is\-accessible\-to\-everyone/$  https://assure-studios.blogspot.com/2022/04/blog-post.html [R=301,L]
 
@@ -39,7 +38,7 @@ RewriteRule ^portfolio/$  https://assurestudios.com/portfolio.html [R=301,L]
 
 
 # Add Caching.
-<FilesMatch ".(ico|jpg|jpeg|png|gif|js|css|swf)$">
+<FilesMatch ".(svg|ico|jpg|jpeg|png|gif|js|css|swf)$">
     Header set Cache-Control "max-age=4233600"
 </FilesMatch>
 

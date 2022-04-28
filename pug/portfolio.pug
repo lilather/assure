@@ -1,25 +1,29 @@
 extends template.pug
+
 block title&description
+ meta(name="description" content="Assure Studios help small business and churches grow and prosper with digital marketing plans Call for a free consultation (972) 898-7128")
+ title Assure Studios-Portfolio-Digital Marketing-Dallas,Texas
 block bodyTag
-  -var bodyTag="portfolio"
-  body(id=`${bodyTag}`)  
-block content 
- .banner.container-fluid
- .wrapper
-  .section.portfolio-intro.container-fluid 
-   h2 Our Simple Portfolio
-   h3.mb-5 The portfolio shows of our work our creative style and our ability to create clean responsive websites
-   .row 
-    .col-xl-4.portfolio-item(data-aos="fade-up",data-aos-delay="500")
-     a(href="./portfolio/dallas-missionary-church-version-one.html")
-      img(src="./img/dallas-mission-v1-ipad-iphone@2x-1-1024x950.png")
-     h3 Dallas Missionary Church Version One 
-    .col-xl-4.portfolio-item(data-aos="fade-up",data-aos-delay="800")
-     a(href="./portfolio/dallas-missionary-church-version-two.html")
-      img(src="./img/dallas-mission-v2-ipad-iphone@2x-1-1024x950.png")
-     h3 Dallas Missionary Church Version Two 
-    .col-xl-4.portfolio-item(data-aos="fade-up",data-aos-delay="1200")     
-      a(href="./portfolio/dallas-missionary-church-version-three.html")
-       img(src="./img/dallas-mission-v3-ipad-iphone@2x-1-1024x950.png") 
-       h3 Dallas Missionary Church Version Three
+  -var bodyTag = "portfolio"
+  body(id=`${bodyTag}`)
+
+
+block content
+   .section.portfolio-intro
+     h1 Our Simple Portfolio
+     p The portfolio shows off our work, our creative style, and our ability to create clean responsive websites.
+   .container-fluid
+      .row
+        .col-xl-4.portfolio-item(data-aos="fade-up", data-aos-delay="500")
+         a(href="./portfolio/dallas-missionary-church-version-one.html")
+          img(src="./img/dallas-mission-v1-ipad-iphone@2x-1-1024x950.png" alt="a church website mockup")
+         h3 Dallas Missionary Church Version One
+        .col-xl-4.portfolio-item(data-aos="fade-up", data-aos-delay="800")
+         a(href="./portfolio/dallas-missionary-church-version-two.html")
+          img(src="./img/dallas-mission-v2-ipad-iphone@2x-1-1024x950.png" alt="a church website mockup")
+         h3 Dallas Missionary Church Version Two
+        .col-xl-4.portfolio-item(data-aos="fade-up", data-aos-delay="1200")
+          a(href="./portfolio/dallas-missionary-church-version-three.html")
+           img(src="./img/dallas-mission-v3-ipad-iphone@2x-1-1024x950.png" alt="a church website mockup")
+          h3 Dallas Missionary Church Version Three
 

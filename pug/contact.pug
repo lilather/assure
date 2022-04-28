@@ -1,23 +1,21 @@
 extends template.pug
 block title&description
+  meta(name="description" content="Assure Studios help small business and churches grow and prosper with Search Engine Optimization Call for a free consultation (972) 898-7128")
+  title Contact Assure Studios
 block bodyTag
  -var bodyTag="contact"
- body(id=`${bodyTag}`)  
-block content
- .wrapper
-  .containe(rdata-aos="fade-up", data-aos-anchor-placement="top-bottom").mt-5.mb-5
+ body(id=`${bodyTag}`)
 
-    form#contactForm 
+block content
+  .container.mt-5.mb-5
+    form#contactForm.Ass(name="contact" method="post")
      .row.justify-content-center
       h1 Please Drop Us A Line
-      h2.mb-4 If You Have Any Comments Questions Or Concerns?
-       |  Fill Out The Form Below 
-       br
-       | Or Call 972 898-7128 And Leave A Message
+      h2 Or Call 972 898-7128 And Leave A Message
       .col-12
-        label(for="full_name") Your Name
-        input.input-form(id ="full_name" ,type="text" required)
-        .inputError 
+        label(for="f_name") Your Name
+        input.input-form(id ="f_name", name="f_name", type="text" required)
+        .inputError
       .col-12
         label(for="phone") Your Phone
         input.input-form(id ="phone", type="tel")
@@ -25,16 +23,17 @@ block content
 
       .col-12
         label(for="email") Your Email
-        input.input-form(id="email" , type="email")
-        .inputError 
+        input.input-form(id="email", type="email")
+        .inputError
 
       .col-12
-        label(for="message") Leave a Message
+        label(for="contactMessage") Leave a Message
         textarea.input-form(id ="contactMessage", name="", cols="30", rows="10")
-        .inputError 
+        .inputError
 
       .col-12.mt-3
-        input(id="contactSubmit" ,type="submit", value="submit").button.assure-button 
-      #submitMessage 
-block append scripts
- script(src="js/contact.js")
+        input(id="contactSubmit", type="submit", value="submit").button.assure-button
+      #submitMessage
+block callToAction
+  block append scripts
+   script(src="js/contact.js")

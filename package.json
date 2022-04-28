@@ -14,13 +14,21 @@
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.0.0",
     "gulp-load-plugins": "^2.0.7",
+    "gulp-minify": "^3.1.0",
     "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.47.0"
+    "prettier": "2.6.2",
+    "sass": "^1.47.0",
+    "workbox-build": "^6.5.1"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "gulp-pug": "^5.0.0",
+    "gulp-sitemap": "^8.0.0",
     "gulp-watch": "^5.0.1"
   }
 }

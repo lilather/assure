@@ -1,84 +1,158 @@
 extends template.pug
 block title&description
+  meta(name="description" content="Assure Studios help small business and churches grow and prosper with digital marketing plans Call for a free consultation (972) 898-7128")
+  title Assure Studios Digital Marketing
 block bodyTag
- -var bodyTag="home"
- body(id=`${bodyTag}`) 
-block content 
- .banner.container-fluid
-  .row.align-items-center.justify-content-center
-   .col-xl-6(data-aos="fade-right" data-aos-duration="1000").col-lg-12
-    img(src="./img/AdobeStock_109401734.png", alt="") 
-   .col-xl-4(data-aos="fade-left" data-aos-duration="1000").col-lg-12
-    .banner-title Assure Studios 
-    h1 Our Mission is to help small businesses and churches grow and prosper through digital marketing strategies
- .wrapper
-  .section.intro.container-fluid 
-   .row.align-items-center.flex-wrap-reverse
-    .col-xl-6(data-aos="fade-left" data-aos-duration="1000").col-lg-12
-     h2 We Are A Digital Marketing Company
-     p Assure Studios is based out of Dallas, Texas. Our Mission is to help small businesses and churches grow and prosper through Digital Marketing Strategies. We offer social media management, social media marketing, and web development.
-     p There is no quick fix to digital marketing. Digital marketing takes time and patience. Assure Studios create realistic smart goals and weekly reports. So that you know your money is not being wasted
-    .col-xl-6(data-aos="fade-left" data-aos-duration="1000").col-lg-12
-     img(src="./img/digital-marketing-1200.jpg", alt="")
-  .section(data-aos="zoom-in-right").section-black.container-fluid 
-   .row.align-items-center
-    .col-lg-12.col-xl-6
-     h2 A Results Driven Company
-     p When it comes to digital marketing  it’s all about the results. We create plans developed around simple-to-understand and measurable smart goals. We work with you to help build your brand and your business.
-     p All the strategies that Assure Studios employ work together to generate traffic for your website, create brand awareness, and transform website visitors into customers.
-    .col-lg-12.col-xl-6
-     img(src="./img/digital-marketing-work-1200.jpg", alt="")
-  .section(data-aos="zoom-in-right").container-fluid
-   .row.justify-content-center.flex-wrap
-    .col-xl-9.col-lg-12.why_we_different
-     h2(style="animation-delay:1s")  Why were Different
-     p Our Unique selling position is we care about your business and want all of our customers to succeed. 
-      span.font-weight-bold We exhibit this by: 
-     ul 
-      li Pricing our services competitively.
-      li Offering free consultations.
-      li Offering free website performance and, SEO audits.
-      li We give tons of freebies from blog posts to dev and marketing checklists
-      li We put your business before profits and do all we can to make sure you are on the right check to digital marketing success.
-  .section.container-fluid
-   .row.justify-content-between
-    h2(data-aos="zoom-in-down") Solutions That Help Grow Your Business
+  -var bodyTag="home"
+  body(id=`${bodyTag}`)
 
-    .card(data-aos="zoom-in-up").col-xl-4.col-lg-12
-     .card-icon
-      img(src="./img/digital marketing-icon.svg", alt="")
-     h3 Digital Marketing
-     p Digital marketing is the use of the internet to display advertising, and use channels to reach, connect and engage with customers.
-     button.button.assure-button Learn More
-    .card(data-aos="zoom-in-down").col-xl-4.col-lg-12
-     .card-icon
-      img(src="./img/seo-icon.svg", alt="")
-     h3 SEO 
-     p Search Engine Optimisation or SEO is the activity of assuring a website can easily be found in search engines When people are looking for products or services your business offers
-     button.button.assure-button Learn More
-    .card(data-aos="zoom-in-up").col-xl-4.col-lg-12
-     .card-icon
-      img(src="./img/web-dev-icon.svg", alt="")
+block banner
+  .banner.container-fluid
+    .row.align-items-center.justify-content-center
+      .col-xxl-5
+        picture
+          source(media="(max-width: 400px)" srcset="./img/laptop-with-rocket-350.png")
+          source(media="(max-width: 799px)" srcset="./img/laptop-with-rocket-756.png")
+          source(media="(min-width: 800px)" srcset="./img/laptop-with-rocket-1200.png")
+          img(width="1200" height="1200" src="./img/laptop-with-rocket-1200.png" alt="laptop-with-rocket")
+      .col-xxl-5
+        .banner-title Assure Studios
+          h1 We help small businesses grow and prosper through digital marketing strategies.
 
-     h3 Website Optimization
-     p Website optimization is about improving your websites user experience so that people will be more likely to convert goals on your website.
-     button.button.assure-button Learn More
-  .section.container-fluid(data-aos="zoom-in-up") 
-   .row 
-    h2 Latest blog
-    .blog
-     h3 Five Social Media Tips For Churches 
-     .blog-date December 13 2021
-     .blog-author By 
-      | <span><a href="#">John Moore</a></span> 
-     p Tips To help your church with its social media process. These tips will help your church’s social media process and help your church create a roadmap for success. Read More…
-  .section.callToAction.container-fluid(data-aos="zoom-in-down") 
-   .row
-    h2 Ready To Chat About Digital Marketing.
-    .col-xl-8.col-lg-12
-       input(type="text" placeholder="Please Enter Your Email")
-    .col-xl-4.col-lg-12
-       button.button.assure-button lets chat
-    
-     
+block content
+ .section.intro.container-fluid
+     .row.align-items-center.flex-wrap-reverse
+       .col-xl-6.col-lg-12
+         h2 We Are Assure Studios
+         p Assure Studios is based out of Dallas, Texas. Our Mission is to help small businesses and churches grow and prosper through Digital Marketing Strategies. We offer social media management, social media marketing, and web development.
+         p There is no quick fix to digital marketing. Digital marketing takes time and patience. Assure Studios create realistic smart goals and weekly reports. So that you know your money is not being wasted.
+       .col-xl-6.col-lg-12
+         picture
+           source(media="(max-width: 400px)" srcset="./img/digital-marketing-350.jpg")
+           source(media="(max-width: 799px)" srcset="./img/digital-marketing-756.jpg")
+           source(media="(min-width: 800px)" srcset="./img/digital-marketing-1200.jpg")
+           img( width="1200" height="1200" src="./img/digital-marketing-1200.jpg" alt="assure studios picture of papers and computers")
+ .section.section-black
+     .container-fluid
+       .row.align-items-center
+         .col-lg-12.col-xl-6
+           h2 A Results Driven Company
+           p When it comes to digital marketing  it’s all about the results. We create plans developed around simple-to-understand and measurable smart goals. We work with you to help build your brand and your business.
+           p All the strategies that Assure Studios employ work together to generate traffic for your website, create brand awareness, and transform website visitors into customers.
+           p If you are a church and not a small business please &nbsp;
+            br
+            a(href="./churches.html" title ="church services") Click here for our church services.
+         .col-lg-12.col-xl-6
+           picture
+            source(media="(max-width: 400px)" srcset="./img/digital-marketing-work-350.jpg")
+            source(media="(max-width: 799px)" srcset="./img/digital-marketing-work-756.jpg")
+            source(media="(min-width: 800px)" srcset="./img/digital-marketing-work-1200.jpg")
+            img(width="1200" height="1200" src="./img/digital-marketing-work-1200.jpg" alt="assure studios picture of papers and computers")
+
+ .section.container-fluid
+    h2 We are here to help.
+    p We would love to work with you and help your business grow and prosper.
+    p Here are the 4 things we do to show our clients we care.
+     .row.justify.content-between
+
+      #accordionFlushExample.accordion.accordion-flush
+        .accordion-item
+          h3#flush-headingOne.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+              | Free Consultations
+          #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+            .accordion-body
+              p It never hurts to talk. Do you need help, advice or are you interested in one of our services? Please contact us today for a free consultation.
+              p We are not going to charge you for a conversion, if we can help you no matter if you are our client or not; we will try.
+        .accordion-item
+          h3#flush-headingTwo.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+              | Free Basic Seo Audits
+          #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+            .accordion-body
+              p You want an SEO audit that helps you understand the steps you have to take to get more traffic to your website. Let us know its on the house.
+              p We are not going to charge you for a basic SEO audit, no matter if you are our client or not, Its just another way we put people before our profits.
+        .accordion-item
+          h3#flush-headingThree.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+              | Free Web Performance Audits
+          #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+            .accordion-body
+              P You want an web development audit that helps you understand if your website is performing well. Let us know its on the house..
+              p We are not going to charge you for a basic Web Performance audit, no matter if you are our client or not, Its just another way we put people before our profits.
+        .accordion-item
+          h3#flush-headingFour.accordion-header
+            button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+              | We Stay Flexible
+          #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+            .accordion-body
+              P We are a small company very attentive and flexible.
+              p We treat all of our clients; small businesses, big businesses and non profits with the same level of attention and care.
+
+ .section.container-fluid
+     .row.justify-content-between
+       .col-12
+         h2 We Help Grow Your Business
+         p We have digital marketing Services to help your business grow and prosper.
+       .card.col-xl-4.col-lg-12
+         .card-icon
+           img(src="./img/digital marketing-icon.svg" alt="")
+         h3 Digital Marketing
+         p Digital marketing is the use of the internet to display advertising, and use channels to reach, connect and engage with customers.
+         button(onClick="location.href='./digital-marketing.html'").button.assure-button Learn More
+       .card.col-xl-4.col-lg-12
+         .card-icon
+           img(src="./img/seo-icon.svg", alt="search engine optimization icon")
+         h3 SEO
+         p Search Engine Optimization or SEO is the activity of assuring a website can easily be found in search engines; when people are looking for products or services your business offers
+         button(onClick="location.href='./seo.html'").button.assure-button Learn More
+       .card.col-xl-4.col-lg-12
+         .card-icon
+           img(src="./img/web-dev-icon.svg" alt="web icon")
+
+         h3 Website Development
+         p Website development is about creating well crafted websites that are mobile friendly, accessible and secure.
+         button(onClick="location.href='./web-development.html'").button.assure-button Learn More
+ .section.container-fluid
+   h2 The Faqs
+   p Top three questions about digital marketing.
+   .row.justify.content-between
+
+     #accordionFaq.accordion.accordion-flush
+      .accordion-item
+        h3#faq-headingOne.accordion-header
+          button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#faq-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+            | What is Digital Marketing?
+        #faq-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+          .accordion-body
+            p Digital marketing involves all marketing efforts that use a digital device or the internet.
+      .accordion-item
+        h3#faq-headingTwo.accordion-header
+          button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#faq-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+            | What Does Digital Marketing Mean For Your Business?
+        #faq-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+          .accordion-body
+            p With Digital Marketing you can use channels such as social media, email marketing, and blogs to connect and engage with your customers on a local as well global level.
+      .accordion-item
+        h3#faq-headingThree.accordion-header
+          button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#faq-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+            | What Are The Different Types of Digital Marketing?
+        #faq-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+          .accordion-body
+           h4.mt-5-mb-2 Content Marketing
+           p Content marketing is the process of creating and sharing relevant and consistent content.
+           p One of the key goals of content marketing is to provide people with inspirational, life-changing content that adds value to their lives.
+           h4 Email Marketing
+           p Email marketing is about creating a list of segmented groups of people and crafting an intimate, personalized message for each group. A segmented group might be parents, students, or married couples, and all these groups should be marketed to different groups.
+           h4 Search Engine Marketing
+           p Search Engine Optimization or SEO is the practice of increasing the traffic to your church website, blogs, newsletters, and social media content.
+           h4  Social Media Marketing
+           p Social media marketing is the use of social media platforms to connect and engage with your congregation and your local community.
+           h4 PPC Marketing
+           p Pay-per-click, is a digital marketing model where advertisers run ads on a platform such as Google Ads and pays a fee every time someone clicks on an ad.
+           h4 Affiliate Marketing
+           p Affiliate marketing involves earning a commission by promoting a product or service made by another company
+     p.mt-5 If you would like to see more FAQ's
+      br
+      a(href="./faq.html" title="faqs") Click Here for our Faq page
 

@@ -1,11 +1,13 @@
-<?php 
+<?php
+
+
+$json = file_get_contents('php://input');
+$data = json_decode($json);
 	if($_POST) {
 
-		$to = "john@assurestudios.com"; // Your email here
+		$to = "assurestudios@gmail.com"; // Your email here
 		$subject = 'Message from my website'; // Subject message here
-
 	}
-
 	//Send mail function
 	function send_mail($to,$subject,$message,$headers){
 		if(@mail($to,$subject,$message,$headers)){
@@ -16,35 +18,33 @@
 	}
 
 	//Check if $_POST vars are set
-	if(!isset($_POST['name']) || !isset($_POST['mail']) || !isset($_POST['comment'])){
+	if(!isset($_POST['f_name']) || !isset($_POST['email'])){
 		echo json_encode(array('info' => 'error', 'msg' => 'Please fill out all fields'));
+
 	}
 
-	//Sanitize input data, remove all illegal characters	
-	$name    = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-	$mail    = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
-	$subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-	$website = filter_var($_POST['website'], FILTER_SANITIZE_STRING);
-	$comment = filter_var($_POST['comment'], FILTER_SANITIZE_STRING);
+	//Sanitize input data, remove all illegal characters
+	$name = filter_var($_POST['f_name'], FILTER_SANITIZE_STRING);
+	$email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+	$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+	$tel = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
 
 	//Validation
 	if($name == '') {
-		echo json_encode(array('info' => 'error', 'msg' => "Please enter your name."));
+    echo var_dump($_POST);
+		echo json_encode(array('info' => 'error', 'msg' => "Please enter your nvame."));
 		exit();
 	}
-	if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
+	if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 		echo json_encode(array('info' => 'error', 'msg' => "Please enter valid e-mail."));
 		exit();
 	}
-	if($comment == ''){
-		echo json_encode(array('info' => 'error', 'msg' => "Please enter your message."));
-		exit();
-	}
+
 
 	//Send Mail
-	$headers = 'From: ' . $mail .''. "\r\n".
-	'Reply-To: '.$mail.'' . "\r\n" .
+	$headers = 'From: ' . $email .''. "\r\n".
+	'Reply-To: '.$email.'' . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 
-	send_mail($to, $subject, $comment . "\r\n\n"  .'Name: '.$name. "\r\n" .'Email: '.$mail, $headers);
+	send_mail($to, $subject, $message . "\r\n\n"  .'Name: '.$name. "\r\n" .'Email: '.$email, $headers);
 ?>

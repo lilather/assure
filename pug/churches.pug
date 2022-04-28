@@ -1,0 +1,118 @@
+extends template.pug
+block title&description
+  meta(name="description" content="Assure Studios help churches grow and prosper with digital marketing plans Call for a free consultation (972) 898-7128")
+  title Assure Studios Digital Marketing for churches
+block bodyTag
+  -var bodyTag="church-digital-marketing"
+  body(id=`${bodyTag}`)
+
+block banner
+  .banner.container-fluid
+    .row.align-items-center.justify-content-center
+      .col-xxl-5(data-aos="fade-up" data-aos-duration="1000")
+        picture
+          source(media="(max-width: 400px)" srcset="./img/laptop-with-rocket-350.png")
+          source(media="(max-width: 799px)" srcset="./img/laptop-with-rocket-756.png")
+          source(media="(min-width: 800px)" srcset="./img/laptop-with-rocket-1200.png")
+          img(src="./img/laptop-with-rocket-1200.png" alt="laptop-with-rocket")
+      .col-xxl-5(data-aos="fade-up" data-aos-duration="1000")
+        .banner-title Assure Studios
+          h1 Let us help your church grow and prosper with digital marketing plans
+
+block content
+ .section.intro.container-fluid
+     .row.align-items-center.flex-wrap-reverse
+       .col-xl-6(data-aos="fade-left" data-aos-duration="1000").col-lg-12
+         h2 We help churches with digital marketing & web development
+         p Assure Studios is based out of Dallas, Texas. Our Mission is to help small businesses and churches grow and prosper through Digital Marketing Strategies. We offer social media management, social media marketing, and web development.
+         p There is no quick fix to digital marketing. Digital marketing takes time and patience. Assure Studios create realistic smart goals and weekly reports. So that you know your money is not being wasted.
+       .col-xl-6(data-aos="fade-left" data-aos-duration="1000").col-lg-12
+         img(src="./img/church-logo.png" alt="assure studios digital marketing church logo")
+ .section(data-aos="zoom-in-right").section-black
+     .container-fluid
+       .row.align-items-center
+         .col-lg-12.col-xl-6
+           h2 A Results Driven Company
+           p When it comes to digital marketing  it’s all about the results. We create plans developed around simple-to-understand and measurable smart goals. We work with you to help build your brand and your business.
+           p All the strategies that Assure Studios employ work together to generate traffic for your church website, create church brand awareness, and convert website visitors into local church visitors.
+         .col-lg-12.col-xl-6
+           picture
+            source(media="(max-width: 400px)" srcset="./img/digital-marketing-work-350.jpg")
+            source(media="(max-width: 799px)" srcset="./img/digital-marketing-work-756.jpg")
+            source(media="(min-width: 800px)" srcset="./img/digital-marketing-work-1200.jpg")
+            img(src="./img/digital-marketing-work-1200.jpg" alt="assure studios picture of papers and computers")
+
+ .section.container-fluid
+     .row.justify-content-between
+       .col-12
+         h2(data-aos="zoom-in-down") We Help Grow Your Church
+         p We have digital marketing Services to help your church grow and prosper
+       .card(data-aos="zoom-in-up").col-xl-4.col-lg-12
+         .card-icon
+           img(src="./img/digital marketing-icon.svg" alt="")
+         h3 Church Digital Marketing
+         p Digital marketing is the use of the internet to display advertising, and use channels to reach, connect and engage with customers, Think of Digital marketing as a new form of digital out reach.
+         p With Assure Studios your church will attract more visitors with a great digital outreach plan with monthly smart goals that assure growth.
+
+
+       .card(data-aos="zoom-in-down").col-xl-4.col-lg-12
+         .card-icon
+           img(src="./img/seo-icon.svg", alt="search engine optimization icon")
+         h3 Church SEO
+         p Search Engine Optimization or SEO is the activity of assuring a website can easily be found in search engines;
+         p When people are looking for a new church home or looking for a specific church ministry that your church provides, you want them to find your church website first.
+         p An effective SEO Plan helps to increase traffic to your website resulting in more website visits and ultimately more visits to your local church
+
+
+       .card(data-aos="zoom-in-up").col-xl-4.col-lg-12
+         .card-icon
+           img(src="./img/web-dev-icon.svg" alt="web icon")
+
+         h3 Church Website Development
+         p Website development is about creating well crafted websites that are mobile friendly, accessible and secure.
+         p Your church website should represent your church brand and culture and help to achieve your church's god-given mission.
+ .section.container-fluid
+   h2 The Faqs
+   p Top three questions about digital marketing for churches.
+   .row.justify.content-between
+
+     #accordionFaq.accordion.accordion-flush
+      .accordion-item
+        h3#faq-headingOne.accordion-header
+          button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#faq-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+            | Why do churches need digital marketing?
+        #faq-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+          .accordion-body
+            p Digital marketing for churches is a new form of digital outreach that helps you differentiate your church from the other churches in your area
+      .accordion-item
+        h3#faq-headingTwo.accordion-header
+          button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#faq-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+            | How to market a church a church?
+        #faq-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+          .accordion-body
+            p There are several ways to do marketing for a church.
+            p Here are just a few.
+            ul
+             li Your church website
+             li Social media campaigns
+             li Text Message campaigns
+             li Email campaigns
+             li Digital ads
+      .accordion-item
+        h3#faq-headingThree.accordion-header
+          button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#faq-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+            | What are some social media ideas for churches?
+        #faq-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+          .accordion-body
+           h4 here are 22 Church Social Media Post Ideas
+           h5 1&#8226; Recap an event
+           p Post the exciting highlights of an event that just occurred. Make people who missed the event kick themselves and prepare to catch the next one and make the people who attended the event remember how much fun or how life-changing the event was.
+
+           h5 2&#8226; Share Testimonies
+           p Testimonies are how churches can encourage and inspire by sharing stories that help us all relate to our own hills and valleys. These stories are what drive us and help us keep our faith. Simple testimonial posts can change lives.
+
+           h5 3&#8226; Highlight your volunteers
+           p We all love our volunteers so he would show them, and tell them why we love them so much. Maybe reward them with a gift or let people post a nice message about them in a post.
+           p.mt-5 To read the entire blog post &nbsp
+            a(href="https://assure-studios.blogspot.com/2022/03/22-church-social-media-post-ideas.html" title="22 Church Social Media Post Ideas") 22 Church Social Media Post Ideas
+

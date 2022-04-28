@@ -1,94 +1,97 @@
 extends template.pug
 block title&description
-block bodyTag 
+ meta(name="description" content="Assure Studios help small business and churches grow and prosper with digital marketing plans Call for a free consultation (972) 898-7128")
+ title About Assure Studios-Digital Marketing-Dallas,Texas
+block bodyTag
   -var bodyTag="about"
-  body(id=`${bodyTag}`) 
-block content 
- .banner.container-fluid
+  body(id=`${bodyTag}`)
 
- .wrapper
-  .section.about-intro.container-fluid 
-   .row.justify-content-center
-    .col-xl-6(data-aos="zoom-in-left")
-      img(src="./img/john-moore.png").img-border
-    .col-xl-6(data-aos="zoom-in-right")
-      h2 Hello Im John 
-      p I am the founder of Assure Studios. I fell in love with web design and development at an early age, In this highly crowded field of digital marketing and web development.
-      p I wondered how I can compete.With Assure Studios I came to the conclusion that our difference will be honesty, hard work, and all pursuits should lead to my client’s success.
-  .section.offer.container-fluid
-   .row 
-    .col-xl-4(data-aos="zoom-in-right").card.card-offer.col-md-12.offer-h2
-     h2 what we offer 
-     h3 We offer several forms of digital marketing practices to help your business grow and prosper.
-    .col-xl-4(data-aos="zoom-in-left").card.card-offer.col-md-12
-      .icon
-       img(src="./img/seo-icon.svg", alt="")
-      .offer-header
-       h4 SEO
-       .price Starting at 
-        span  $399 
-        | a month
+block content
 
-      p Social media marketing helps you connect with your customers build your brand and increase sales.
-      ul.goals
-        h5 Goals:
-        li Generate Traffic
-        li Increase Conversions and revenue
-        li Increase Brand Awareness
-        li Decrease Bounce Rate
-        li Build A Community of Advocates.
-    .col-xl-4(data-aos="zoom-in-right").card.card-offer.col-md-12
-      .icon
-       img(src="./img/digital marketing-icon.svg")
-      .offer-header
-       h4 SMM
-       .price Starting at 
-        span  $499 
-        | a month
-      p Social media marketing is the use of social media networks to achieve your marketing and branding goals
-      ul.goals
-        h5 Goals:
-        li Increase Engagement
-        li Learn Customer Concerns and Problems
-        li Increase Brand Awareness 
-        li Build A Community of Advocates.
-        li Acquire new customers.
-    .col-xl-4(data-aos="zoom-in-right").card.card-offer.col-md-12
-      .icon
-       img(src="./img/digital management-icon.svg")
-      .offer-header
-       h4 SMA
-       .price Starting at 
-        span  $499 
-        | a month
-      p Social media advertising is where paid ad campaigns are run on social media platforms to reach target customers  
-      ul.goals
-        h5 Goals:
-        li Lead generation
-        li Increase Brand Awareness
-        li Increase Traffic
-        li Increase Revenue
-    .col-xl-4(data-aos="zoom-in-left").card.col-md-12.card-offer
-      .icon
-       img(src="./img/web-dev-icon.svg", alt="")
-      .offer-header
-       h4 Web Dev
-       .price Starting at 
-        span $250 
-        | a month
-      p  Web development refers to the building, creating, Optimizing and maintaining of websites
-      ul.goals
-        h5 Goals:
-        li Increase Brand Recognition
-        li Increase Sales
-        li Lead Generation
-        li create a better user experience
+    .section.about-intro.container-fluid
+     .row.flex-wrap-reverse
+      .col-xl-8
+       h1 About
+        |<br>
+        span Assure Studios
+       p Our mission is to help small businesses and churches grow and prosper through digital marketing strategies.
+       p We are a company devoted to results, we create realistic digital marketing plans comprised of smart goals that your business can reach.
+       p Were a small, affordable and flexible company dedicated to building prospering businesses.
+      .col-xl-4
+          img(src="./img/logo.png" alt="Logo of assure studios which is a big A")
+    .section.container-fluid(data-aos="zoom-in-down")
+     .row.justify-content-center
+      .col-xl-6
+        img(src="./img/john-moore.jpg" alt="john moore founder of assure studios").img-border
+      .col-xl-6
+        h2 Hello Im John
+        p I am the founder of Assure Studios. I fell in love with web design and development at an early age, In this highly crowded field of digital marketing and web development.
+        p I wondered how I can compete. With Assure Studios I came to the conclusion that our difference will be honesty, hard work, and all pursuits should lead to our client’s success.
+    .section.offer.container-fluid
+     .row
+      .col-xl-4.card.card-offer.col-md-12.offer-h2
+       h3 what we offer
+      .col-xl-4.card.card-offer.col-md-12
+        .icon
+         img(src="./img/seo-icon.svg", alt=" magnifying-glass-icon")
+        .offer-header
+         h4 SEO
+         .price Starting at
+          span  $399
+          |  a month
 
+        p #[b Search Engine Optimization] helps you connect with your customers build your brand and increase sales
+        ul.goals
+          h5 Goals:
+          li Generate Traffic
+          li Increase Conversions and revenue
+          li Increase Brand Awareness
+          li Decrease Bounce Rate
+          li Build A Community of Advocates.
+      .col-xl-4.card.card-offer.col-md-12
+        .icon
+         img(src="./img/digital marketing-icon.svg" alt="bull-horn-icon")
+        .offer-header
+         h4 SMM
+         .price Starting at
+          span  $499
+          |   a month
+        p #[b Social Media Marketing] is the use of social media networks to achieve your marketing and branding goals
+        ul.goals
+          h5 Goals:
+          li Increase Engagement
+          li Learn Customer Concerns and Problems
+          li Increase Brand Awareness
+          li Build A Community of Advocates.
+          li Acquire new customers.
+      .col-xl-4.card.card-offer.col-md-12
+        .icon
+         img(src="./img/digital management-icon.svg" alt="bullseye-icon")
+        .offer-header
+         h4 SMA
+         .price Starting at
+          span  $499
+          |  a month
+        p #[b Social Media Advertising] is where paid ad campaigns are run on social media platforms to reach target customers
+        ul.goals
+          h5 Goals:
+          li Lead generation
+          li Increase Brand Awareness
+          li Increase Traffic
+          li Increase Revenue
+      .col-xl-4.card.col-md-12.card-offer
+        .icon
+         img(src="./img/web-dev-icon.svg", alt="web-development icon")
+        .offer-header
+         h4 Web Design & Development
+         .price Starting at
+          span  $1000
+          | &nbsp; One Time Payment
+        p  #[b Web Development] refers to the building, creating, Optimizing and maintaining of websites
+        ul.goals
+          h5 Goals:
+          li Increase Brand Recognition
+          li Increase Sales
+          li Lead Generation
+          li create a better user experience
 
-  .section.callToAction.container-fluid(data-aos="zoom-in-down") 
-   .row
-    h2 Ready To Chat About Digital Marketing.
-    .col-xl-8.col-lg-12
-       input(type="text" placeholder="Please Enter Your Email")
-    .col-xl-4.col-lg-12
-       button.button.assure-button lets chat 
