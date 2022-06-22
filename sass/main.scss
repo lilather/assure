@@ -42,7 +42,7 @@ html {
   padding: 0;
   height: 100%;
   min-height: 100%;
-  font-size: 21px;
+  font-size: 18px;
   font-family: sofia-pro, sans-serif;
   color: $grey-bg;
   font-display: fallback;
@@ -73,12 +73,12 @@ h1{
   font-size: 3.2rem;
 }
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   text-transform: capitalize;
 }
 .banner h1 {
   font-size: 36px;
-  font-weight: normal;
+  font-weight: normal !important;
 }
 h1{
 margin-top:75px;
@@ -87,15 +87,15 @@ margin-top:75px;
 
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 
 }
 
 h4{
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 h5{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 header {
@@ -124,18 +124,18 @@ header {
   --animate-delay: 1.4s;
   --animate-duration: 4s;
   cursor: pointer;
-  transition: opacity 0.4s;
+  transition: opacity 0.3s;
   font-size: 0.9rem;
 
   a {
     color: $grey-bg;
-    font-weight: 600;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   a:hover {
     color: $highlight-color !important;
-    text-decoration: underline;
+    text-decoration: none;
+    transition: all 0.5s ease;
   }
 
   hr {
@@ -256,6 +256,10 @@ color: #fff !important;
   z-index: 4;
 
 }
+.moveMobileNav a, .moveMobileNav tel {
+  text-decoration: none !important;
+
+}
 
 .hideScrollBar {
   overflow-y: hidden;
@@ -339,13 +343,13 @@ h3 {
   font-size: 1.2rem !important;
 }
 .assure-button {
+  padding: 15px;
   width: 250px !important;
-  height: 80px !important;
   background-color: $highlight-color !important;
   border-radius: 12px !important;
   color: white !important;
   border: none !important;
-  font-size: 21px;
+  font-size: 18px;
   text-transform: capitalize;
 
 }
@@ -661,7 +665,7 @@ p.brandingLogo {
 
 
   h2 {
-    font-size:1.2rem;
+    font-size:1.7rem;
   }
 
   .wrapper {
@@ -713,7 +717,9 @@ p.brandingLogo {
     height: 700px;
 
   }
-
+.nav-bar{
+  align-items: center;
+}
 
 }
 @media (max-width: 1200px) {
@@ -736,11 +742,14 @@ p.brandingLogo {
 
   .nav-link {
     a {
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     hr {
       display: block;
+    }
+    :hover{
+      text-decoration:none;
     }
   }
 
@@ -949,7 +958,7 @@ text-align: center;
 #about .card{
   margin:7px;
 }
-#about h1 span{
+ h1 span{
 font-size: 4rem}
 .talents{
   height: min-content;
@@ -963,4 +972,91 @@ font-size: 4rem}
   padding-bottom:5px;
 }
 
+#app {
+  display: grid;
+  float:left !important;
+}
 
+
+.headerButton button{
+
+  padding: 18px 20px;
+  border-radius: 7px;
+  background-color: $highlight-color;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  min-width:220px;
+
+}
+.headerButton button:hover {
+  background-color: #dc5447;
+  transition: all 0.5s ease;
+}
+
+.nav-link.headerTel{
+  min-width: 240px;
+  color: $highlight-color;
+  text-decoration: underline;
+}
+
+.nav-link.headerTel:hover{
+  text-decoration: none;
+}
+
+.headerScroll .nav-link.headerTel  {
+  color: white;
+}
+
+.headerScroll .nav-link.headerTel {
+  color: white;
+}
+
+#mc_embed_signupOne input.email, #mc_embed_signupOne input[type='text'],  #mc_embed_signupOne input[type='url'] {
+  font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+  font-size: 15px;
+  display: block;
+  padding: 0 0.4em;
+  min-height:15px;
+  width: 96%;
+  min-width: 130px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 50px !important;
+
+}
+#mc_embed_signupOne label{
+  display: block;
+  font-size: 16px !important;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-top:25px;
+}
+#mc_embed_signupOne input {
+  border: 1px solid #999;
+  -webkit-appearance: none;
+}
+#mc_embed_signupOne input {
+  border: 1px solid #ABB0B2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#mc_embed_signupOne input {
+}
+#mc_embed_signupOne #mc-embedded-subscribe.button{
+  margin-left:0px !important;
+  padding:10px 20px;
+}
+
+
+.services .card{
+  margin:10px 0px;
+}
+
+@media (min-width: 1200px){
+.services .card.col-xl-6 {
+  flex: 0 0 auto;
+  width: 49.5% !important;
+}}

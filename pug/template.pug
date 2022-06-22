@@ -60,17 +60,22 @@ block header
         .mobile-close
          span x
         .nav-link.home-link
-         a(href="./")  home
+         a(title="Home" href="./")  home
          hr
         .nav-link.about-link
-         a(href="about.html") about
+         a(title="About Assure Studios" href="about.html") about
          hr
         .nav-link
-         a(href="portfolio.html") portfolio
+         a(title="Assure Studios portfolio" href="portfolio.html") portfolio
          hr
-        .nav-link
-         a(href="./contact.html") contact
+        .nav-link.headerTel
+         a(href="tel:9728981728" title="Give us a call") phone: 972-898-7128
          hr
+        .nav-link.headerButton
+         button(onClick="location.href='./contact.html'"  title="Free Consultation") Free Consultation
+
+
+
 block banner
 .wrapper
  block content
@@ -80,12 +85,12 @@ block banner
 block callToAction
           .callToAction(data-aos="fade-up" data-aos-duration="1000")
             .container-fluid
-             .row.justify-content-around
-                .col-sm-12.col-lg-8
+             .row.justify-content-around.align-items-center
+                .col-sm-12.col-lg-8.mb-3
                  h2 Ready for A Free Consultation?
-
+                 p We would love to hear more about your business and how we can help you grow! Please schedule a free consultation with us so that we can learn more about your needs.
                 .col-sm-12.col-lg-3
-                 button(onClick="location.href='./contact.html'").chatBtn.assure-button lets chat
+                 button(onClick="location.href='./contact.html'").chatBtn.assure-button Please Contact Us
 
 
 block footer
@@ -101,7 +106,7 @@ block footer
                 p Lets talk about web design, development, digital marketing and search engine optimization.
                 .dflex
                  input#mce-EMAIL.email(type='email' value='' name='EMAIL' placeholder='email address' required='')
-                 input#mc-embedded-subscribe.button.assure-button(type='submit' value='Subscribe' name='subscribe')
+                 input#mc-embedded-subscribe.button.assure-button.newsletter-signup(type='submit' value='Subscribe' name='subscribe')
 
                 // real people should not fill this in and expect good things - do not remove this or risk form bot signups
                 div(style='position: absolute; left: -5000px;' aria-hidden='true')

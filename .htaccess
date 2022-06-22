@@ -23,10 +23,6 @@ RewriteRule ^contact/$  https://assurestudios.com/contact.html [R=301,L]
 
 
 # Redirect Urls (Permanent)
-RewriteRule ^blog/$  https://assure-studios.blogspot.com/ [R=301,L]
-
-
-# Redirect Urls (Permanent)
 RewriteRule ^church\-post\-ideas/$  https://assure-studios.blogspot.com/2022/03/22-church-social-media-post-ideas.html [R=301,L]
 
 # Redirect Urls (Permanent)

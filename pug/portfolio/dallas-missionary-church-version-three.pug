@@ -32,9 +32,12 @@ block header
       .nav-link
         a(href="../portfolio.html") portfolio
         hr
-      .nav-link
-        a(href="../contact.html") contact
+      .nav-link.headerTel
+        tel(title="Give us a call") phone: 972-898-7128
         hr
+      .nav-link.headerButton
+        button(onClick="location.href='../contact.html'"  title="Free Consultation") Free Consultation
+
 block content
     img(src="../img/dallas-mission-v3-ipad-iphone@2x-1-1024x950.png")
     .project-section.about-project
