@@ -1,21 +1,46 @@
 extends template.pug
 block title&description
-  meta(name="description" content="Assure Studios help small business and churches grow and prosper with Search Engine Optimization Call for a free consultation (972) 898-7128")
+  meta(name="description" content="Contact Assure Studios for all of your SEO, web design, and marketing needs. We're based in Dallas Texas and specialize in helping small businesses and churches grow.")
   title Contact Assure Studios
 block bodyTag
  -var bodyTag="contact"
  body(id=`${bodyTag}`)
 
+
 block content
-  .container.mt-5.mb-5
-    form#contactForm.Ass(name="contact" method="post")
+  .section
+   .container-fluid
+    form#contactForm(name="contact" method="post")
      .row.justify-content-center
-      h1 Please Drop Us A Line
-      h2 Or Call 972 898-7128 for a free consultation
+      h1 Our contact page
+      h2.mt-2.mb-3  Click the link or fill out the form below
+      h3
+       a(href="#").text-lowercase john@assurestudios.com
+       | &nbsp
+      h3
+        a(href="tel:9728981728" title="Give us a call") phone: 972-898-7128
+      .col-12.mt-5
+        fieldset#consoltation_type
+         legend.mb-5.mt-5 Do you need consultation for a business or a non-profit
+         .div.form-check
+          input(class="form-check-input" type="radio" id="business" name="type_org" value="Business" checked)
+          label.form-check-label(for="business") Business
+         .div.form-check
+          input(class="form-check-input" type="radio" id="church" name="type_org" value="Church")
+          label.form-check-label(for="church") Church or Non-profit
       .col-12
         label(for="f_name") Your Name
         input.input-form(id ="f_name", name="f_name", type="text" required)
         .inputError
+      .col-12#org_name.type_org_input
+        label(for="org_name") Your Business name
+        input.input-form(type="text" )
+        .inputError
+      .col-12#church_name.type_org_input
+        label(for="church_name") Your Church or Non-profit
+        input.input-form(type="text" )
+        .inputError
+
       .col-12
         label(for="phone") Your Phone
         input.input-form(id ="phone", type="tel")

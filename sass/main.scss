@@ -35,14 +35,17 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.assureBold{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
   min-height: 100%;
-  font-size: 18px;
+  font-size: 20px;
   font-family: sofia-pro, sans-serif;
   color: $grey-bg;
   font-display: fallback;
@@ -73,7 +76,7 @@ h1{
   font-size: 3.2rem;
 }
 h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-transform: capitalize;
 }
 .banner h1 {
@@ -209,22 +212,23 @@ color: #fff !important;
 
 .banner {
   height: 100vh;
-  background-color: $highlight-color;
+  background-color:#fff ;
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: #fff;
+  color: $highlight-color;
   justify-content: center;
   text-align: center;
-
+border-top: thin solid $dark-bg;
   .banner-title {
     font-size: 3.8rem;
     line-height: 120px;
     text-align: left;
+    color: $dark-bg;
 
   }
   h1{
-    color: #fff;
+    color: $dark-bg;
     margin-top:10px;
     font-weight: bold;
   }
@@ -281,8 +285,8 @@ color: #fff !important;
 }
 
 .section {
-  margin: 150px 0;
-  padding: 7% 5%;
+  margin: 60px 0;
+  padding: 5%;
 
 }
 .content-section{
@@ -290,13 +294,13 @@ color: #fff !important;
     font-size: 2.4rem;
   }
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
   h4{
-    font-size: 1rem;
-    color: $highlight-color;
+    font-size: 1.1rem;
   }
-  margin: 50px 0;
+  margin: 30px 0;
   padding: 2%;
 }
 
@@ -343,8 +347,8 @@ h3 {
   font-size: 1.2rem !important;
 }
 .assure-button {
-  padding: 15px;
-  width: 250px !important;
+  padding: 20px;
+  width: 270px !important;
   background-color: $highlight-color !important;
   border-radius: 12px !important;
   color: white !important;
@@ -503,8 +507,9 @@ p.brandingLogo {
 }
 
 .offer h3 {
-  font-size: 3rem !important;
-  font-weight: 600 !important
+  font-size: 1.9rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
 
 }
 
@@ -530,10 +535,13 @@ p.brandingLogo {
   flex-direction: column;
   margin-bottom: 10px;
 }
+.goals{
+  margin-top:20px;
+}
 
 .card-offer li {
   text-transform: capitalize;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 0.2rem;
 }
 
@@ -548,9 +556,11 @@ p.brandingLogo {
 
 .price span {
   color: $highlight-color;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
-
+.card-offer b{
+  text-transform: uppercase;
+}
 .img-border {
   border: thin solid #000;
 
@@ -564,9 +574,10 @@ p.brandingLogo {
   opacity: 0.7
 }
 
-.portfolio-item h3 {
+.portfolio-item h2 {
   text-align: center !important;
   font-weight: 300;
+  font-size: 1.2rem;
 }
 .noBanner {
   h1 {
@@ -643,7 +654,14 @@ p.brandingLogo {
   body {
     font-size: 16px;
   }
+  .section {
+    margin: 60px 0;
+    padding: 2%;
 
+  }
+  .logo img {
+    width: 16%;
+  }
   .banner{
 
     .banner-title {
@@ -655,17 +673,29 @@ p.brandingLogo {
       font-size:1rem;
       font-weight: lighter;
     }
-  }
 
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  #contact h1 {
+    font-size: 1.7rem !important;
+  }
   .moveMobileNav {
     height: 100%;
     width: 100%;
   }
 
 
-
+#contact h2 a{
+  font-size: 1.3rem;
+  margin-bottom:20px;
+}
+  #contact h2 {
+    font-size: 1.2rem;
+  }
   h2 {
-    font-size:1.7rem;
+    font-size:1.5rem;
   }
 
   .wrapper {
@@ -923,9 +953,16 @@ p.brandingLogo {
 #contact h2 {
   text-align: center;
 }
+#contact h2 a{
+  text-transform: none;
+}
 
 #contact h1 {
   font-size: 45px;
+}
+#contact h3{
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 
@@ -1060,3 +1097,43 @@ font-size: 4rem}
   flex: 0 0 auto;
   width: 49.5% !important;
 }}
+
+
+#consoltation_type input{
+width:20px !important;
+}
+
+#contact #consoltation_type label {
+  display: inline !important;
+  margin-top: 0px !important;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.more-link:after {
+  content: "→" /*rtl:"←"*/;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+.more-link{
+  display:table;
+ }
+
+.typo-letters{
+  word-break:break-all;
+  letter-spacing: 1px;
+}
+
+.typo-numbers{
+  margin-top:20px;
+  word-break:break-all;
+  letter-spacing: 5px;
+
+}
+.typo-name{
+  font-size: 1.4rem;
+}
+
+#church_name{
+  display: none;
+}

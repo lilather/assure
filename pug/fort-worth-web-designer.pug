@@ -1,55 +1,61 @@
 extends template.pug
 block title&description
-  meta(name="description" content="Assure Studios-Fort Worth Web Designer help Call for a free consultation (972) 898-7128")
-  title Assure Studios-Fort Worth Web Designer
+  -var city = "fort worth"
+  meta(name="description" content="Assure Studios- #{city} Web Designer help Call for a free consultation (972) 898-7128")
+  title Assure Studios-#{city} Web Designer
 block bodyTag
   -var bodyTag="Fort Worth web designer"
 block content
+
   .container-fluid.section
    .row
-    .col-xl-6
-      img(src="./img/john-moore.jpg" alt="john moore founder of assure studios").img-border
-    .col-xl-6
-     h1 A Dallas-Forth Worth web designer
-     p Hello, My name is John Moore with Assure Studios, a Forth Worth area web designer that focuses on results.
+    .col-xl-12
+      img(src="./img/ft-worth-banner.jpg" alt="ft-worth banner")
+    .col-xl-12
+     h1 A #{city} area
+      br
+      span web designer and developer
+     p Hello, my name is John Moore and I am the owner of Assure Studios, a DFW area web designer.
+     p We focus on results and creating websites that are beautiful, fast and responsive. We have a wide range of experience in designing and developing websites for businesses of all sizes and industries. We are confident that we can create a website for your business that will help you achieve your goals and objectives.
+     p Contact us today to learn more about our services and how we can help you take your business to the next level.
 
   .container-fluid.section
     .row
-     .col-xl-12
-       img(src="./img/ft-worth-banner.jpg" alt="ft-worth banner")
-       h2 Forth Worth is a great place for business
+     .col-xl-10
+       h2 #{city} is a great place for business
        p With just over 900 thousand people, Fort Worth is texas 5th largest city by population, and the ninth-best large city to start a business according to a report from
         | <a href="https://wallethub.com/edu/best-cities-to-start-a-business/2281"> wallethub.com </a>
        p A new report by
         |<a href="https://learn.roofstock.com/blog/cities-with-most-startups"> roofstock.com</a>
         |  says the DFW region ranks among the top ten metro areas with the most startup businesses.
-       p With your business needs is a local reliable Forth Worth web designer that cares about making sure your website is mobile-friendly and search engine optimized.
+       p With your business needs is a local reliable Fort Worth web designer that cares about making sure your website is mobile-friendly and search engine optimized.
        p Lets talk a little about the importance of each.
   .container-fluid.section
    .row
-    .col-xl-5
-      img(src="./img/fort-worth-web-designer.jpeg" alt="forth-worth-web-design-mobile-design")
-    .col-xl-7
-      h2 Web Design or web development
-      p A web designer is a graphic artist who designs the layout and the visual appearance of a website.
-      p A web developer is someone who builds and maintains a website. I use both of these terms sometimes because I am both.
-      p If you want to learn more about our web design process click here
-       | &nbsp; <a href="./web-development.html"> Assure Studios web development process</a>
+    .col-xl-12
+      img(src="./img/assure-studios-web-development-wireframes.jpeg" alt="fort-worth-web-design")
+    .col-xl-12
+      h2.mt-5 Web Design and web development
+      p A #[strong web designer] is a graphic artist who designs the layout and appearance of a website. Web designers use various tools to create visually appealing webpages that are easy to navigate. They also assess the needs of a website and its users, and design pages that meet those needs. Web designers often work with web developers to create a complete website.
+      p A #[strong web developer] is responsible for building and maintaining websites. They use coding languages to create site features and functionality, and often work with web designers to bring their vision to life. Web developers must have a strong understanding of how web browsers and servers work, as well as an ability to troubleshoot problems. In addition, they need to be familiar with various coding languages and frameworks.
+      P Assure Studios sometimes use the terms web development and web design interchangeably because we do both.
+
   .container-fluid.section
     .row
-     .col-xl-7
-      h2 mobile friendly web design
+     .col-xl-12
+        img(src="./img/web-design-mobile-design.jpeg" alt="fort-worth-web-design-mobile-design")
+     .col-xl-12
+      h2.mt-5 mobile friendly web design
       p Mobile-friendly means that your website performs well and looks good
        | on mobile devices such as cell phones and tablets. The main objective is for users to have a user experience that is equal to if not better than when someone uses a desktop computer.
       p The reason mobile-friendly is so vital is that everyone have a mobile device, mobile internet has grown 504% in daily media consumption since 2011. if your website is not mobile-friendly you are losing customers and its hurting your business.
       p If you need to check if your existing website google has free mobile test at
        |  <a href="https://search.google.com/test/mobile-friendly"> https://search.google.com/test/mobile-friendly</a>
-     .col-xl-5
-      img(src="./img/web-design-mobile-design.jpeg" alt="forth-worth-web-design-mobile-design")
+
   .container-fluid.section
     .row.flex-wrap-reverse
      .col-xl-12
-      h2 search engine optimization
+      h2.mt-5 search engine optimization
       p Search engine optimization (SEO) is the science of getting pages to rank higher in search engines such as Google.
       p It is vital, especially in a big city such as Fort Worth that people looking for the local services and products that your business provides, find your website first before they find your competitors.
       p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your web site in a way that makes google happy,
@@ -59,176 +65,13 @@ block content
           | &nbsp; <a href="./seo.html"> More about SEO</a>
      .col-xl-12
       img(src="./img/assure-studios-search-engine-seo.jpeg")
-  .container-fluid.section
+  .container-fluid.section.d-md-none.d-lg-block
         .row
-          .col-12
-             img(src="./img/web-process.png" alt="assure studios web-development-process.jpeg")
-             h2 Our Web Design process
-             p Every Web Design process has a process our 8 Phases helps us and our clients create a smooth productive relationship.
-             #accordionPriceGuide.accordion.accordionPriceGuide
-              .accordion-item
-                h2#priceGuideHeadingOne.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseOne' aria-expanded='false' aria-controls='priceGuideCollapseOne')
-                   span Phase 1
-                   | &nbsp; Discovery Phase
-                #priceGuideCollapseOne.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingOne' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                    p The Discovery phase is the phase of research where we learn about our clients goals, competition, market and industry. Here is a more about the discovery phase in detail...
-                    h3.mt-5.mb-1 Goal Identification:
-                    p Goal Identification is the process to determine what goals the new website will attempt to achieve. Defining goals means determining success.
-                    p All goals should be SMART goals and monitored weekly to ensure success.
-                    h3.mt-5.mb-1 Target audiences:
-                    p Target audience refers to the distinctive group of customers most likely to want your product or service, and therefore, the group of people who the website is created to attract.
-                    h3.mt-5.mb-1 Messaging:
-                    p Messaging is the language your brand uses to communicate with its consumers.
-                    p The messaging includes taglines, slogans, and catchphrases as well as the tone that your brand conveys.
-                    h3.mt-5.mb-1 competition:
-                    p The competition analysis helps us to understand who your competition and it's a great way to find inspiration and opportunity.
-                    p The main objective is to understand what your competition is doing right and capitalize on opportunities they are missing.
-              .accordion-item
-                h2#priceGuideHeadingTwo.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseTwo' aria-expanded='false' aria-controls='priceGuideCollapseTwo')
-                   span Phase 2
-                   | &nbsp; Project Scope Phase
-                #priceGuideCollapseTwo.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingTwo' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                   h3 The web design plan in writing
-                   p The second phase of the web process is the project scope. The project Scope is a written detailed plan to show what work will be completed, the timeframes, the deliverables, budget limitations, and what the client needs to provide to ensure a successful launch.
-              .accordion-item
-                h2#priceGuideHeadingThree.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseThree' aria-expanded='false' aria-controls='priceGuideCollapseThree')
-                   span Phase 3
-                   | &nbsp; Informational architecture phase
-                #priceGuideCollapseThree.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingThree' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                    p This phase is broken up into three stages the site map, the wireframe, and the mockup. All three of these stages are explained below
-                    h3.mt-5.mb-1 Site Maps
-                    img(src="./img/Untitled-2.png" alt="assure studios web development sitemap")
-                    p In the first stage of the phase, We create site maps which are like a blueprint to your website and help us understand how every page links to one another.
-                    h3.mt-5.mb-1 Wireframes
-                    img(src="./img/assure-studios-web-development-wireframes.jpeg" alt="assure studios web development wireframes")
-                    p The second stage is creating wireframes which are simple sketches of web pages.
-                    p At this stage, we start to hash out the design of the website. We also get a better understanding of the layout, navigation, and mobile responsiveness of the website.
-                    h3.mt-5.mb-1  Mockups
-                    p The third stage is the mockup stage which is where we create an actual working prototype of a page or a couple of pages of the website. This working mockup is to test what's working and not working from a user experience standpoint.
-              .accordion-item
-                h2#priceGuideHeadingFour.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseFour' aria-expanded='false' aria-controls='priceGuideCollapseFour')
-                   span Phase 4
-                   | &nbsp; The Content and SEO Phase
-                #priceGuideCollapseFour.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingFour' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                   h3 Content drives engagement
-                   p Content helps a business obtain their marketing goals. Creating content that is interesting, engaging, and relative to what your target audience likes will make your website more popular.
-                   p Content also boosts a site’s visibility for search engines.
-                   p Understanding the keywords and phrases that you will use on each webpage is the main component of search engine optimization or SEO  and it is vital for the success of your website.
-              .accordion-item
-                h2#priceGuideHeadingFive.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseFive' aria-expanded='false' aria-controls='priceGuideCollapseFive')
-                   span Phase 5
-                   | &nbsp; Development phase
-                #priceGuideCollapseFive.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingFive' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                    p After the design and content are agreed upon, we can start building the website.
-                    p Whether it's a cms platform like WordPress and Wix, or an HTML 5 website we will create a website with SEO and mobile in mind.
-                    p While we develop your website; you will receive a “private link”  so can see what is being built, and monitor the progress as things come along.
-              .accordion-item
-                h2#priceGuideHeadingSix.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseSix' aria-expanded='false' aria-controls='priceGuideCollapseSix')
-                   span Phase 6
-                   | &nbsp; Testing
-                #priceGuideCollapseSix.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingSix' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                   h3 Test, and Test some more
-                   p A site is never ready for the public until we test the quality of what we build and look for problems. We test
-                   ul
-                    li SEO problems
-                    li link and URL problems
-                    li accessibility problems
-                    li and of course spelling problems
-                   p Testing provides our clients with a more efficient and stable product.
-              .accordion-item
-                h2#priceGuideHeadingSeven.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseSeven' aria-expanded='false' aria-controls='priceGuideCollapseSeven')
-                   span Phase 7
-                   | &nbsp; Launch Phase
-                #priceGuideCollapseSeven.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingSeven' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                   img(src="./img/assure-studios-happy-man-because-of-website-launch.jpeg" alt="happy man because of website launch")
-                   h3 We hand over the keys to you.
-                   p This is everyone's favorite phase. The launch or delivery phase is where we make the site public and you can enjoy a beautiful and reliable website that will bring you joy and satisfaction.
-              .accordion-item
-                h2#priceGuideHeadingEight.accordion-header
-                  button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#priceGuideCollapseEight' aria-expanded='false' aria-controls='priceGuideCollapseEight')
-                   span Phase 8
-                   | &nbsp; Maintenance Phase
-                #priceGuideCollapseEight.accordion-collapse.collapse(aria-labelledby='priceGuideHeadingEight' data-bs-parent='#accordionPriceGuide')
-                  .accordion-body
-                   h3 Web site maintenance never stops
-                   p Website Maintenance is an ongoing process for making sure your website performs well, loads fast and the keeps content up to date.
-                   p Maintenance is a phase that many people overlook or ignore, but it's just as important as the others.
-                   p Conversion goals should be regularly monitored to see if the users or taking the right actions on the site.
-                   p Content such as SEO keywords and phrases have to be revised to find what your target audience is responding to, and plugins and code should be periodically be checked for bugs and errors.
-                   p Page speed should be checked periodically to see that your web site is still performing well.
-                   p A proper analytics implementation will help you track most of these issues and will also help you find opportunities that you might be overlooking.
+             include ../partials/web-process-partial
+
 
   .section.offer.container-fluid
     .row
-     h2 Our web development packages
-     p Our web development packages is competitively priced and works for every budget.
-     .col-xxl-6(data-aos="zoom-in-left").card.card-offer
-        .offer-header
-          h3 bronze package
-          p.price Starting at
-            span  $1000
-            |  One time payment
-            | <br> Or five monthly payments of &nbsp
-            span $200
-
-        p.card-emphasis A basic site with a pre-made template that best meets your needs.
-        h4 Website Package Details
-        ul.goals
-          li Website Template
-          li 2 Hour Brainstorm
-          li Mobile friendly
-          li Social Media Integration
-          li Mailing List Plugin
-          li Contact Form
-          li 2 Rounds of Revisions
-     .col-xxl-6(data-aos="zoom-in-right").card.card-offer
-        .offer-header
-          h3 silver package
-          p.price Starting at
-            span  $1500
-            |  One time payment
-            | <br> Or five monthly payments of &nbsp
-            span $300
-        p.card-emphasis A customized web template that we find and customized to your liking.
-        h4 Website Package Details
-        ul.goals
-          li Every thing that the bronze package includes plus
-          li Customized Theme
-          li 4 Hour Brainstorm
-          li Google Analytics
-          li 3 Rounds of Revision
-          li 404 page
-
-     .col-xxl-12(data-aos="zoom-in-right").card.card-offer
-         .offer-header
-          h3 gold package
-          p.price Starting at
-            span  $2500
-            |  One time payment
-            | <br> Or five monthly payments of &nbsp
-            span $500
-         p.card-emphasis A site build from scratch to better serve your business and your brand.
-         h4 Website Package Details
-         ul.goals
-          li Every thing that the silver package includes plus
-          li 4 rounds of revisions
-          li An SEO strategy
-          li Two integrated landing pages
-          li Social media Integration
-
+     include ../partials/web-site-prices-partial
 
 

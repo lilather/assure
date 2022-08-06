@@ -10,7 +10,7 @@ const sass = require('gulp-sass')(require('sass'));
 const workboxBuild = require('workbox-build');
 
 function pug() {
-  return src('./pug/**/*.pug').pipe(plugins.pug()).pipe(dest('./'))
+  return src('./pug/**/!(template)*.pug').pipe(plugins.pug()).pipe(dest('./'))
 }
 
 function pug_portfolio() {
@@ -93,7 +93,6 @@ function watchDev(done) {
     }
   });
   plugins.watch('./js/*.js', uglifyJs()).on('change', browserSync.reload);
-
   plugins.watch('./sass/*.scss', scss).on('change', browserSync.reload);
   plugins.watch('./pug/*.pug', pug).on('change', browserSync.reload);
   done();
