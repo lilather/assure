@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0e98b17e-acc6-4232-a9b0-93c09af59b0c" name="new server" url="http://ftp.assurestudios.com/">
+      <webServer id="ecce7c52-0d4e-4b4c-83ef-c2108a1e6ca8" name="new serever" url="">
         <fileTransfer host="107.180.50.190" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="new server" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="new serever" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="new server">
+      <paths name="new serever">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

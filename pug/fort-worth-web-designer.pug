@@ -1,20 +1,20 @@
 extends template.pug
 block title&description
-  -var city = "fort worth"
-  meta(name="description" content="Assure Studios- #{city} Web Designer help Call for a free consultation (972) 898-7128")
+  -var city = "Fort Worth"
+  meta(name="description" content="Assure Studios- " + city +" "+ "Web Designer help Call for a free consultation (972) 898-7128")
   title Assure Studios-#{city} Web Designer
 block bodyTag
   -var bodyTag="Fort Worth web designer"
 block content
 
-  .container-fluid.section
+  .container-fluid.section.intro
    .row
     .col-xl-12
       img(src="./img/ft-worth-banner.jpg" alt="ft-worth banner")
     .col-xl-12
      h1 A #{city} area
       br
-      span web designer and developer
+      | web designer and developer
      p Hello, my name is John Moore and I am the owner of Assure Studios, a DFW area web designer.
      p We focus on results and creating websites that are beautiful, fast and responsive. We have a wide range of experience in designing and developing websites for businesses of all sizes and industries. We are confident that we can create a website for your business that will help you achieve your goals and objectives.
      p Contact us today to learn more about our services and how we can help you take your business to the next level.
@@ -23,19 +23,13 @@ block content
     .row
      .col-xl-10
        h2 #{city} is a great place for business
-       p With just over 900 thousand people, Fort Worth is texas 5th largest city by population, and the ninth-best large city to start a business according to a report from
-        | <a href="https://wallethub.com/edu/best-cities-to-start-a-business/2281"> wallethub.com </a>
-       p A new report by
-        |<a href="https://learn.roofstock.com/blog/cities-with-most-startups"> roofstock.com</a>
-        |  says the DFW region ranks among the top ten metro areas with the most startup businesses.
-       p With your business needs is a local reliable Fort Worth web designer that cares about making sure your website is mobile-friendly and search engine optimized.
-       p Lets talk a little about the importance of each.
+       include ../partials/dfw-local/web-development/ForthWorth
   .container-fluid.section
    .row
     .col-xl-12
-      img(src="./img/assure-studios-web-development-wireframes.jpeg" alt="fort-worth-web-design")
-    .col-xl-12
       h2.mt-5 Web Design and web development
+      img.mb-4(src="./img/assure-studios-web-development-wireframes.jpeg" alt="fort-worth-web-design")
+    .col-xl-12
       p A #[strong web designer] is a graphic artist who designs the layout and appearance of a website. Web designers use various tools to create visually appealing webpages that are easy to navigate. They also assess the needs of a website and its users, and design pages that meet those needs. Web designers often work with web developers to create a complete website.
       p A #[strong web developer] is responsible for building and maintaining websites. They use coding languages to create site features and functionality, and often work with web designers to bring their vision to life. Web developers must have a strong understanding of how web browsers and servers work, as well as an ability to troubleshoot problems. In addition, they need to be familiar with various coding languages and frameworks.
       P Assure Studios sometimes use the terms web development and web design interchangeably because we do both.
@@ -43,9 +37,9 @@ block content
   .container-fluid.section
     .row
      .col-xl-12
-        img(src="./img/web-design-mobile-design.jpeg" alt="fort-worth-web-design-mobile-design")
-     .col-xl-12
       h2.mt-5 mobile friendly web design
+      img(src="./img/web-design-mobile-design.jpeg" alt="fort-worth-web-design-mobile-design")
+     .col-xl-12
       p Mobile-friendly means that your website performs well and looks good
        | on mobile devices such as cell phones and tablets. The main objective is for users to have a user experience that is equal to if not better than when someone uses a desktop computer.
       p The reason mobile-friendly is so vital is that everyone have a mobile device, mobile internet has grown 504% in daily media consumption since 2011. if your website is not mobile-friendly you are losing customers and its hurting your business.
@@ -56,15 +50,14 @@ block content
     .row.flex-wrap-reverse
      .col-xl-12
       h2.mt-5 search engine optimization
+      img(src="./img/assure-studios-search-engine-seo.jpeg")
       p Search engine optimization (SEO) is the science of getting pages to rank higher in search engines such as Google.
-      p It is vital, especially in a big city such as Fort Worth that people looking for the local services and products that your business provides, find your website first before they find your competitors.
+      p It is vital, especially in a big city such as #{city} that people looking for the local services and products that your business provides, find your website first before they find your competitors.
       p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your web site in a way that makes google happy,
        | they will place it on the first page of the search engine results page or the (SERPs).
       P More than two-thirds of all clicks on SERPs go to the top five results, that's why SEO is vital for every business.
       p If you want to learn more about Search Engine Optimization click here
           | &nbsp; <a href="./seo.html"> More about SEO</a>
-     .col-xl-12
-      img(src="./img/assure-studios-search-engine-seo.jpeg")
   .container-fluid.section.d-md-none.d-lg-block
         .row
              include ../partials/web-process-partial
@@ -74,4 +67,9 @@ block content
     .row
      include ../partials/web-site-prices-partial
 
+  include ../partials/dfw-local/web-development/dfw-locales
+
+
+block callToAction
+  include ../partials/dfw-local/web-development/call-to-action
 

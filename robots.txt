@@ -1,6 +1,7 @@
 # www.robotstxt.org/
-Disallow: /soprosper/
+
 
 # Allow crawling of all content
-User-Agent: *
-Allow: /
+User-agent: *
+Disallow: /soprosper/
+Disallow:/test/

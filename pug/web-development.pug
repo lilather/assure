@@ -7,56 +7,48 @@ block bodyTag
  body(id=`${bodyTag}`)
 
 block content
- .container-fluid.mt-5
-   .row
-    .col-xl-9
+     .container-fluid
+      .row
+        .intro
+          img(src="./img/assure-studios-web-dev-process.jpeg" alt="assure studios web-development-process.jpeg")
+          h1 Assure Studios Web development
+          p.sectionHelper Web Development is our forte at Assure Studios; we make sure your website is fast, mobile-friendly, accessible, and secure.
+           | Here is an explanation of the four factors in a little more detail.
       .container-fluid
         .row
-          .col-12
-            img(src="./img/assure-studios-web-dev-process.jpeg" alt="assure studios web-development-process.jpeg")
-            h1 Assure Studios Web development
-            p Web Development is our forte at Assure Studios; we make sure your website is fast, mobile-friendly, accessible, and secure.
-             | Here is an explanation of the four factors in a little more detail.
-            .content-section
-              h2 Security
-              p Your website should never be an HTTP site your website should employ an HTTPS certificate.
-              p HTTP is an abbreviation that stands for Hypertext Transfer Protocol. HTTPS is an abbreviation that stands for Hypertext Transfer Protocol Secure.
-              p The only difference between the two is HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses. As a result, HTTPS is far more secure than HTTP.
-              p The HTTP protocol directly affects SEO because, In 2015, Google announced that HTTPS websites would rank higher than HTTP websites in Search Engine results pages.
-            .content-section
-              img(src="./img/assure-studios-accessibility.jpeg" alt="assure-studios Accessibility picture")
-              h2 Accessibility
-              p Accessibility is the practice of making your websites usable by as many people as possible, this mainly refers to people with disabilities that cannot navigate a standard website with a mouse or keyboard. .
-              p There should be no barriers that prevent people who experience varying degrees of visual, auditory, cognitive, speech, and physical disabilities to access and interact with your website.
-              p The benefits of accessibility are building a broader customer base, and increasing brand loyalty through inclusion.
-            .content-section
-              h2 mobile friendly web design
-              p Mobile-friendly means that your website performs well and looks good
-                | on mobile devices such as cell phones and tablets. The main objective is for users to have a user experience that is equal to if not better than when someone uses a desktop computer.
-              p The reason mobile-friendly is so vital is that everyone have a mobile device, mobile internet has grown 504% in daily media consumption since 2011. if your website is not mobile-friendly you are losing customers and its hurting your business.
-              p If you need to check if your existing website google has free mobile test at
-                |  <a href="https://search.google.com/test/mobile-friendly"> https://search.google.com/test/mobile-friendly</a>
-            .content-section
-             h2 Page Speed
-             p Page speed affects SEO Page speed is a direct ranking factor. It also affects the user experience Studies show how users expect pages to load within two seconds, and after three seconds, up to 40% of users will abandon your site.
-            .container-fluid.section
-              .row
-                .col-12
-                   img(src="./img/web-process.png" alt="assure studios web-development-process.jpeg")
-                   h2 Our Web Design process
-                   p Every Web Design process has a process our 8 Phases helps us and our clients create a smooth productive relationship.
-
-
-            .content-section.offer
-             .container-fluid
-             .row
-              h2 Our web development packages
-              p Our web development packages is competitive priced and works for every budget.
-
-
-
-
-    .talents.col-xl-3
+         .section
+          h2 Security
+          p Your website should never be an HTTP site your website should employ an HTTPS certificate.
+          p HTTP is an abbreviation that stands for Hypertext Transfer Protocol. HTTPS is an abbreviation that stands for Hypertext Transfer Protocol Secure.
+          p The only difference between the two is HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses. As a result, HTTPS is far more secure than HTTP.
+          p The HTTP protocol directly affects SEO because, In 2015, Google announced that HTTPS websites would rank higher than HTTP websites in Search Engine results pages.
+      .container-fluid
+        .row
+         .section
+          img(src="./img/assure-studios-accessibility.jpeg" alt="assure-studios Accessibility picture")
+          h2 Accessibility
+          p Accessibility is the practice of making your websites usable by as many people as possible, this mainly refers to people with disabilities that cannot navigate a standard website with a mouse or keyboard. .
+          p There should be no barriers that prevent people who experience varying degrees of visual, auditory, cognitive, speech, and physical disabilities to access and interact with your website.
+          p The benefits of accessibility are building a broader customer base, and increasing brand loyalty through inclusion.
+      .container-fluid
+        .row
+         .section
+          h2 mobile friendly web design
+          p Mobile-friendly means that your website performs well and looks good
+            | on mobile devices such as cell phones and tablets. The main objective is for users to have a user experience that is equal to if not better than when someone uses a desktop computer.
+          p The reason mobile-friendly is so vital is that everyone have a mobile device, mobile internet has grown 504% in daily media consumption since 2011. if your website is not mobile-friendly you are losing customers and its hurting your business.
+          p If you need to check if your existing website google has free mobile test at
+            |  <a href="https://search.google.com/test/mobile-friendly"> https://search.google.com/test/mobile-friendly</a>
+      .container-fluid
+        .row
+         .section
+          h2 Page Speed
+          p Page speed affects SEO Page speed is a direct ranking factor. It also affects the user experience Studies show how users expect pages to load within two seconds, and after three seconds, up to 40% of users will abandon your site.
+      .container-fluid
+        .row
+         .section
+          include ../partials/web-site-prices-partial
+        .talents.mb-5
            h4 Other Talents
            div
             a(href="./digital-marketing.html" title="assure studios explains digital marketing") Digital Marketing Explained
@@ -64,5 +56,4 @@ block content
             a(href="./seo.html" title="assure studios explains search engine optimization") SEO Explained
            div
             a(href="./consulting.html" title="assure studios explains digital marketing consulting") Digital Marketing Consulting Explained
-
-
+      include ../partials/dfw-local/web-development/dfw-locales

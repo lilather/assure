@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ab74b877-028e-4b0a-9779-9403e0e669f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/partials/dfw-local/seo/call-to-action.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/partials/dfw-local/web-development/Austin.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/partials/dfw-local/web-development/ForthWorth.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/partials/free-stuff-partial.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/partials/seo-prices-partial.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pug/austin-web-designer.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pug/waco-search-engine-optimization.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pug/waco-web-designer.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pug/website-process.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sass/mobile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sass/navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sass/tablet.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/churches.html" beforeDir="false" afterPath="$PROJECT_DIR$/churches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consulting.html" beforeDir="false" afterPath="$PROJECT_DIR$/consulting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital-marketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/digital-marketing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fort-worth-web-designer.html" beforeDir="false" afterPath="$PROJECT_DIR$/fort-worth-web-designer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Dallas-Missionary-Church-Version-Three.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Dallas-Missionary-Church-Version-Three.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-blog-banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-blog-banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-church.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-church.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-accessibility.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-accessibility.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-development.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-development.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-digital-marketing.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-digital-marketing.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-happy-man-because-of-website-launch.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-happy-man-because-of-website-launch.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-search-engine-seo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-search-engine-seo.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-web-dev-process.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-web-dev-process.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-web-development-sitemap.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-web-development-sitemap.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-web-development-wireframes.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-web-development-wireframes.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assure-studios-web-optimization.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assure-studios-web-optimization.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/assurestudios.com-seo-and-coffee.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/assurestudios.com-seo-and-coffee.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/b0068406-6892-45c5-bf25-8b73e7e95a6f.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/b0068406-6892-45c5-bf25-8b73e7e95a6f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/digital-marketing-1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/digital-marketing-1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/digital-marketing-756.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/digital-marketing-756.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/digital-marketing-work-1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/digital-marketing-work-1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/digital-marketing-work-756.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/digital-marketing-work-756.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/discovery-lightbulb.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/discovery-lightbulb.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ft-worth-banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/ft-worth-banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/john-moore.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/john-moore.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/johns-anime.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/johns-anime.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/man-lost-assure-consultation.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/man-lost-assure-consultation.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/social-media-strategy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/social-media-strategy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/watermark-1920-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/watermark-1920-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/watermark-mobile-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/watermark-mobile-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/web-design-mobile-design.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/web-design-mobile-design.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/web-dev-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/web-dev-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/web-process-partial.pug" beforeDir="false" afterPath="$PROJECT_DIR$/partials/web-process-partial.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/web-site-prices-partial.pug" beforeDir="false" afterPath="$PROJECT_DIR$/partials/web-site-prices-partial.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/dallas-missionary-church-version-one.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/dallas-missionary-church-version-one.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/dallas-missionary-church-version-three.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/dallas-missionary-church-version-three.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/dallas-missionary-church-version-two.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/dallas-missionary-church-version-two.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/about.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/about.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/churches.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/churches.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/consulting.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/consulting.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/contact.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/contact.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/digital-marketing.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/digital-marketing.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/fort-worth-web-designer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/fort-worth-web-designer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/portfolio.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/portfolio.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/portfolio/dallas-missionary-church-version-one.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/portfolio/dallas-missionary-church-version-one.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/portfolio/dallas-missionary-church-version-three.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/portfolio/dallas-missionary-church-version-three.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/portfolio/dallas-missionary-church-version-two.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/portfolio/dallas-missionary-church-version-two.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/seo-audit.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/seo-audit.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/seo.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/seo.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/template.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/template.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pug/web-development.pug" beforeDir="false" afterPath="$PROJECT_DIR$/pug/web-development.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/util.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seo-audit.html" beforeDir="false" afterPath="$PROJECT_DIR$/seo-audit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seo.html" beforeDir="false" afterPath="$PROJECT_DIR$/seo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terms-and-conditions.html" beforeDir="false" afterPath="$PROJECT_DIR$/terms-and-conditions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-development.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-development.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGulp">
+      <scroll-view-position x="0" y="0" />
+      <selected-paths>
+        <path>
+          <id value="$PROJECT_DIR$/gulpfile.js" />
+          <id value="watch" />
+        </path>
+      </selected-paths>
+    </layout>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DArl42xJmKFaQyUxmQcEopnpgt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/partials" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\assur_aw\Desktop\assure\node_modules\prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\assur_aw\Desktop\assure\partials" />
+      <recent name="C:\Users\assur_aw\Desktop\assure\partials\dfw-local\seo" />
+      <recent name="C:\Users\assur_aw\Desktop\assure\partials\dfw-local" />
+      <recent name="C:\Users\assur_aw\Desktop\assure\pug" />
+      <recent name="C:\Users\assur_aw\Desktop\assure\sass" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\assur_aw\Desktop\assure\partials\dfw-local\web-development" />
+      <recent name="C:\Users\assur_aw\Desktop\assure\partials\dfw-local\digital-marketing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gulp.js.imgMin">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="imgMin" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>imgMin</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="pug" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>pug</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="sass" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>sass</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="sitemap" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>sitemap</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>watch</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.watch" />
+        <item itemvalue="Gulp.js.pug" />
+        <item itemvalue="Gulp.js.sass" />
+        <item itemvalue="Gulp.js.imgMin" />
+        <item itemvalue="Gulp.js.sitemap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab74b877-028e-4b0a-9779-9403e0e669f9" name="Changes" comment="" />
+      <created>1660152877568</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660152877568</updated>
+      <workItem from="1660152878934" duration="13766000" />
+      <workItem from="1660478176410" duration="6384000" />
+      <workItem from="1660498384720" duration="20861000" />
+      <workItem from="1660644923276" duration="6852000" />
+      <workItem from="1660695511640" duration="78566000" />
+      <workItem from="1660990589393" duration="6330000" />
+      <workItem from="1661023704328" duration="4909000" />
+      <workItem from="1661028678333" duration="9758000" />
+      <workItem from="1661168828171" duration="28523000" />
+      <workItem from="1661427390879" duration="3043000" />
+      <workItem from="1661875724310" duration="4704000" />
+      <workItem from="1661940708143" duration="22657000" />
+      <workItem from="1662120350075" duration="5628000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

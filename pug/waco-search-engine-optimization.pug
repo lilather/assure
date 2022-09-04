@@ -1,0 +1,44 @@
+extends template.pug
+block title&description
+  -var city = "Waco"
+  meta(name="description" content="Assure Studios- " + city +" "+ "Web Designer help Call for a free consultation (972) 898-7128")
+  title Assure Studios-#{city} SEO Experts
+block bodyTag
+  -var bodyTag=" #{city} SEO Experts"
+block content
+
+  .container-fluid.section.intro
+    .row.flex-wrap-reverse.align-items-center
+      .col-xl-12
+       h1
+        span.titleExpander A #{city}
+        br
+        |  & DFW area SEO Expert
+       include ../partials/dfw-local/SEO/Waco
+
+      .col-xl-12
+        picture
+          source(media="(max-width: 400px)" srcset="./img/waco-local-400.jpg")
+          source(media="(max-width: 799px)" srcset="./img/waco-local-800.jpg")
+          source(media="(min-width: 1500px)" srcset="./img/waco-local-1900.jpg")
+          img(src="./img/waco-local-1900.jpg" alt="waco texas flag")
+
+
+  .container-fluid.section
+    .row.flex-wrap-reverse
+      .col-xl-12
+        h2.mt-5 search engine optimization
+        img(src="./img/assure-studios-search-engine-seo.jpeg")
+        p Search engine optimization (SEO) is the science of getting pages to rank higher in search engines such as Google.
+        p It is vital, especially in a big city such as #{city} that people looking for the local services and products that your business provides, find your website first before they find your competitors.
+        p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your web site in a way that makes google happy,
+          | they will place it on the first page of the search engine results page or the (SERPs).
+        P More than two-thirds of all clicks on SERPs go to the top five results, that's why SEO is vital for every business.
+        p If you want to learn more about Search Engine Optimization click here
+          | &nbsp; <a href="./seo.html"> More about SEO</a>
+
+  .section.offer.container-fluid
+    .row
+      include ../partials/seo-prices-partial
+
+include ../partials/dfw-local/seo/call-to-action

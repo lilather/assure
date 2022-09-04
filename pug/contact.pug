@@ -8,7 +8,7 @@ block bodyTag
 
 
 block content
-  .section
+  .section.intro
    .container-fluid
     form#contactForm(name="contact" method="post")
      .row.justify-content-center
@@ -17,8 +17,6 @@ block content
       h3
        a(href="#").text-lowercase john@assurestudios.com
        | &nbsp
-      h3
-        a(href="tel:9728981728" title="Give us a call") phone: 972-898-7128
       .col-12.mt-5
         fieldset#consoltation_type
          legend.mb-5.mt-5 Do you need consultation for a business or a non-profit
@@ -32,11 +30,11 @@ block content
         label(for="f_name") Your Name
         input.input-form(id ="f_name", name="f_name", type="text" required)
         .inputError
-      .col-12#org_name.type_org_input
-        label(for="org_name") Your Business name
+      .col-12#org_name.type_org_input.show
+        label(for="org_name") Your Business Name
         input.input-form(type="text" )
         .inputError
-      .col-12#church_name.type_org_input
+      .col-12#church_name.type_org_input.hide.remove
         label(for="church_name") Your Church or Non-profit
         input.input-form(type="text" )
         .inputError

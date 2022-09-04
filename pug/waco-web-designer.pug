@@ -1,0 +1,62 @@
+extends template.pug
+block title&description
+  -var city = "Waco"
+  meta(name="description" content="Assure Studios- " + city +" "+ "Web Designer help Call for a free consultation (972) 898-7128")
+  title Assure Studios-#{city} Web Designer
+block bodyTag
+  -var bodyTag="waco web designer"
+block content
+
+  .container-fluid.intro
+    .row.flex-wrap-reverse.align-items-center
+      .col-xl-6
+        picture
+          source(media="(max-width: 400px)" srcset="./img/waco-local-400.jpg")
+          source(media="(max-width: 799px)" srcset="./img/waco-local-800.jpg")
+          source(media="(min-width: 1500px)" srcset="./img/waco-local-1900.jpg")
+          img(src="./img/waco-local-1900.jpg" alt="waco texas flag")
+      .col-xl-6
+       h1
+        span.titleExpander A #{city}
+        br
+        | & DFW area web designer
+       include ../partials/dfw-local/web-development/Waco
+
+
+
+  .container-fluid.section
+    .row.align-items-center
+      .col-xl-6
+        h2 Web design vs Web development
+        img(src="./img/assure-studios-web-development-wireframes.jpeg" alt="fort-worth-web-design")
+      .col-xl-6
+        p A #[strong web designer] is a graphic artist who designs the layout and appearance of a website. Web designers use various tools to create visually appealing webpages that are easy to navigate. They also assess the needs of a website and its users, and design pages that meet those needs. Web designers often work with web developers to create a complete website.
+        p A #[strong web developer] is responsible for building and maintaining websites. They use coding languages to create site features and functionality, and often work with web designers to bring their vision to life. Web developers must have a strong understanding of how web browsers and servers work, as well as an ability to troubleshoot problems. In addition, they need to be familiar with various coding languages and frameworks.
+        P Assure Studios sometimes use the terms web development and web design interchangeably because we do both.
+
+
+
+  .container-fluid.section
+    .row.align-items-center
+      .col-xl-6
+        h2 What is Search Engine Optimization (SEO)
+        img(src="./img/assure-studios-search-engine-seo.jpeg")
+
+      .col-xl-6
+       p Search engine optimization (SEO) is the science of getting pages to rank higher in search engines such as Google.
+       p It is vital, especially in a big city such as #{city} that people looking for the local services and products that your business provides, find your website first before they find your competitors.
+       p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your web site in a way that makes google happy,
+       | they will place it on the first page of the search engine results page or the (SERPs).
+       P More than two-thirds of all clicks on SERPs go to the top five results, that's why SEO is vital for every business.
+       p If you want to learn more about Search Engine Optimization click here &nbsp; <a href="./seo.html"> More about SEO</a>
+
+
+
+  .section.offer.container-fluid
+    .row
+      include ../partials/web-site-prices-partial
+  include ../partials/dfw-local/web-development/dfw-locales
+
+block callToAction
+  include ../partials/dfw-local/web-development/call-to-action
+

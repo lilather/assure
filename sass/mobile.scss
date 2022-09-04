@@ -1,0 +1,95 @@
+// 0 to 800px
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    padding: 2%;
+  }
+  .section,
+  .banner {
+    margin: 100px 0px !important;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 2%;
+  }
+  // center logo
+  .logo {
+    text-align: center;
+  }
+  // assure studios have space take away from the space
+  .logo span {
+    margin: 25px 0px;
+    padding-left: 0px !important;
+  }
+  .logo span {
+    display: block;
+  }
+  .mobile-menu-toggler {
+    margin: 20px 0px;
+  }
+
+  .nav-bar {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -2000px;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 9999;
+    transition: all 1s;
+  }
+  .free-stuff {
+    padding: 4%;
+  }
+  .callToAction {
+    border: none !important;
+  }
+  #mc_embed_signup_scroll label {
+    font-size: 1.5em !important;
+  }
+  #mc_embed_signup_scroll {
+    text-align: left;
+  }
+  .social a {
+    display: block;
+    margin: 20px 0;
+    margin-top: 20px;
+  }
+  .other-locals{
+    text-align: left;
+  }
+  .talents{
+    text-align: left;
+
+  }
+
+}
+
+@media (min-width: 800px) {
+  header {
+    flex-direction: row;
+    padding: 0 15px;
+    height: 110px;
+  }
+  .wrapper {
+    padding: 3%;
+  }
+  #mc_embed_signup_scroll label {
+    font-size: 2em !important;
+  }
+  .free-stuff {
+    padding: 3rem 4rem;
+  }
+  .other-locals{
+    text-align: center;
+  }
+  .talents{
+  text-align: center
+
+}}

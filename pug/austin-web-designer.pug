@@ -1,0 +1,80 @@
+extends template.pug
+block title&description
+  -var city = "Austin"
+  meta(name="description" content="Assure Studios- " + city +" "+ "Web Designer help Call for a free consultation (972) 898-7128")
+  title Assure Studios-#{city} Web Designer
+block bodyTag
+  -var bodyTag="Austin web designer"
+block content
+
+  .container-fluid.section.intro
+    .row.flex-wrap-reverse.align-items-center
+     .col-xl-12
+      h1
+       span.titleExpander An #{city}
+       br
+       |  & DFW area web designer
+
+      include ../partials/dfw-local/web-development/Austin
+      button.mt-4(onClick="location.href='./contact.html'").button.assure-button Get A Free Consultation Today!
+
+     .col-xl-12
+      picture
+       source(media="(max-width: 400px)" srcset="./img/austin-local-400.jpg")
+       source(media="(max-width: 799px)" srcset="./img/austin-local-800.jpg")
+       source(media="(min-width: 1500px)" srcset="./img/austin-local-1900.jpg")
+       img(src="./img/austin-local-1900.jpg" alt="austin texas flag")
+
+
+  .container-fluid.content-section
+   .row
+    .col-xl-12
+      h2.mt-5 Web Design and web development
+      img.mb-4(src="./img/AdobeStock_350874983.jpeg" alt="fort-worth-web-design")
+    .col-xl-12
+      p A #[strong web designer] is a graphic artist who designs the layout and appearance of a website. Web designers use various tools to create visually appealing webpages that are easy to navigate. They also assess the needs of a website and its users, and design pages that meet those needs. Web designers often work with web developers to create a complete website.
+      p A #[strong web developer] is responsible for building and maintaining websites. They use coding languages to create site features and functionality, and often work with web designers to bring their vision to life. Web developers must have a strong understanding of how web browsers and servers work, as well as an ability to troubleshoot problems. In addition, they need to be familiar with various coding languages and frameworks.
+      P Assure Studios sometimes use the terms web development and web design interchangeably because we do both.
+
+
+
+  .container-fluid.section
+    .row
+     .col-xl-12
+       h2.mt-5 mobile friendly web design
+       img(src="./img/web-design-mobile-design.jpeg" alt="fort-worth-web-design-mobile-design")
+     .col-xl-12
+      p To us mobile-friendly means responsive it means that your website performs well and looks good on mobile devices such as cell phones and tablets. The main objective is for users to have a user experience that is equal to if not better than when someone uses a desktop computer.
+      p The reason mobile-friendly is so vital is that everyone have a mobile device, mobile internet has grown 504% in daily media consumption since 2011. if your website is not mobile-friendly you are losing customers and its hurting your business.
+      p If you need to check if your existing website google has free mobile test at
+       |  <a href="https://search.google.com/test/mobile-friendly"> https://search.google.com/test/mobile-friendly</a>
+
+  .container-fluid.section
+    .row.flex-wrap-reverse
+     .col-xl-12
+      h2.mt-5 search engine optimization
+      img(src="./img/assure-studios-search-engine-seo.jpeg")
+      p Search engine optimization (SEO) is the science of getting pages to rank higher in search engines such as Google.
+      p It is vital, especially in a big city such as #{city} that people looking for the local services and products that your business provides, find your website first before they find your competitors.
+      p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your web site in a way that makes google happy,
+       | they will place it on the first page of the search engine results page or the (SERPs).
+      P More than two-thirds of all clicks on SERPs go to the top five results, that's why SEO is vital for every business.
+      p If you want to learn more about Search Engine Optimization click here
+       | &nbsp; <a href="./seo.html"> Here's more about search engine optimization (SEO)</a>
+      .content-section
+       p If you have a website - Get a free SEO audit that will help you understand where your website stands and what you can do to improve its ranking
+       button.mt-4(onClick="location.href='./seo-audit.html'").button.assure-button Get Our Free <br> SEO Audit Today !
+
+  .container-fluid.section.d-md-none.d-lg-block
+        .row
+             include ../partials/web-process-partial
+
+
+  .section.offer.container-fluid
+    .row
+     include ../partials/web-site-prices-partial
+
+  include ../partials/dfw-local/web-development/dfw-locales
+
+block callToAction
+  include ../partials/dfw-local/web-development/call-to-action

@@ -1,0 +1,34 @@
+{
+  "name": " ",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-load-plugins": "^2.0.7",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.6.2",
+    "sass": "^1.47.0",
+    "workbox-build": "^6.5.1"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "gulp-pug": "^5.0.0",
+    "gulp-sitemap": "^8.0.0",
+    "gulp-watch": "^5.0.1"
+  }
+}
