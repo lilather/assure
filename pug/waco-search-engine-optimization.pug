@@ -1,4 +1,4 @@
-extends template.pug
+extends ./templates/template.pug
 block title&description
   -var city = "Waco"
   meta(name="description" content="Assure Studios- " + city +" "+ "Web Designer help Call for a free consultation (972) 898-7128")
@@ -14,7 +14,7 @@ block content
         span.titleExpander A #{city}
         br
         |  & DFW area SEO Expert
-       include ../partials/dfw-local/SEO/Waco
+       include ../pug/partials/dfw-local/SEO/Waco
 
       .col-xl-12
         picture
@@ -39,6 +39,6 @@ block content
 
   .section.offer.container-fluid
     .row
-      include ../partials/seo-prices-partial
+      include ../pug/partials/seo-prices-partial
 
-include ../partials/dfw-local/seo/call-to-action
+include ../pug/partials/dfw-local/seo/call-to-action

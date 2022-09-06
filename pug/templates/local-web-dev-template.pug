@@ -1,22 +1,25 @@
-extends ./templates/template.pug
+extends ./template.pug
 block title&description
-  -var city = "Fort Worth"
   meta(name="description" content="Assure Studios- " + city +" "+ "Web Designer help Call for a free consultation (972) 898-7128")
   title Assure Studios-#{city} Web Designer
 block bodyTag
-  -var bodyTag="Forth Worth web designer"
+  -var bodyTag="waco web designer"
 block content
 
   .container-fluid.intro
     .row.flex-wrap-reverse.align-items-center
       .col-xl-6
-       img(src="./img/ft-worth-banner.jpg")
+        picture
+          source(media="(max-width: 400px)" srcset="./img/"+city+"-local-400.jpg")
+          source(media="(max-width: 799px)" srcset="./img/"+city+"-local-800.jpg")
+          source(media="(min-width: 1500px)" srcset="./img/"+city+"-local-1900.jpg")
+          img(src="./img/"+city+"-local-1900.jpg" alt=city+", texas flag")
       .col-xl-6
        h1
-        span.titleExpander An #{city}
+        span.titleExpander A #{city}
         br
         | & DFW area web designer
-       include ../pug/partials/dfw-local/web-development/FortWorth
+       include ../partials/dfw-local/web-development/Waco
 
 
 
@@ -39,7 +42,7 @@ block content
           img(src="./img/assure-security.jpeg" alt="assure-studios security picture")
          .col-xl-6
           h2 Our Focus on Security
-          h3 Is SSL certificate is properly installed?
+          h3 Is Your SSL certificates properly installed?
           p An SSL certificate is essential for any site.
           p Your website should never be an HTTP site your website should employ an HTTPS certificate.
           p Https secure your data and make it harder for hackers to steal vital data from your customers. 
@@ -86,7 +89,7 @@ block content
       .col-xl-6
        h2 Our focus on SEO
        p Search engine optimization (SEO) is the science of getting pages to rank higher in search engines such as Google.
-       p It is vital, especially in a big city such as #{city} that people looking for the local services and products that your business provides, find your website first before they find your competitors.
+       p It is vital, especially in a big city such as Waco that people looking for the local services and products that your business provides, find your website first before they find your competitors.
        p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your website in a way that makes google happy, they will place it on the first page of the search engine results page or the (SERPs).
        p More than two-thirds of all clicks on SERPs go to the top five results, that's why SEO is vital for every business.
        P The benefits of SEO are an increase in organic discovery and traffic and increases in credibility and trust.
@@ -96,8 +99,8 @@ block content
 
   .section.offer.container-fluid
     .row
-      include ../pug/partials/web-site-prices-partial
-  include ../pug/partials/dfw-local/web-development/dfw-locales
+      include ../partials/web-site-prices-partial
+  include ../partials/dfw-local/web-development/dfw-locales
 
 block callToAction
-  include ../pug/partials/dfw-local/web-development/call-to-action
+  include ../partials/dfw-local/web-development/call-to-action

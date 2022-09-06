@@ -1,62 +1,109 @@
-extends template.pug
+extends ./templates/template.pug
 block title&description
   -var city = "Waco"
   meta(name="description" content="Assure Studios- " + city +" "+ "Web Designer help Call for a free consultation (972) 898-7128")
   title Assure Studios-#{city} Web Designer
 block bodyTag
-  -var bodyTag="waco web designer"
+  -var bodyTag="Waco web designer"
 block content
 
   .container-fluid.intro
     .row.flex-wrap-reverse.align-items-center
       .col-xl-6
         picture
-          source(media="(max-width: 400px)" srcset="./img/waco-local-400.jpg")
-          source(media="(max-width: 799px)" srcset="./img/waco-local-800.jpg")
-          source(media="(min-width: 1500px)" srcset="./img/waco-local-1900.jpg")
-          img(src="./img/waco-local-1900.jpg" alt="waco texas flag")
+          source(media="(max-width: 400px)" srcset="./img/Waco-local-400.jpg")
+          source(media="(max-width: 799px)" srcset="./img/Waco-local-800.jpg")
+          source(media="(min-width: 1500px)" srcset="./img/Waco-local-1900.jpg")
+          img(src="./img/Waco-local-1900.jpg" alt="Waco texas flag")
       .col-xl-6
        h1
-        span.titleExpander A #{city}
+        span.titleExpander An #{city}
         br
         | & DFW area web designer
-       include ../partials/dfw-local/web-development/Waco
+       include ../pug/partials/dfw-local/web-development/Waco
 
 
 
   .container-fluid.section
     .row.align-items-center
-      .col-xl-6
-        h2 Web design vs Web development
-        img(src="./img/assure-studios-web-development-wireframes.jpeg" alt="fort-worth-web-design")
-      .col-xl-6
-        p A #[strong web designer] is a graphic artist who designs the layout and appearance of a website. Web designers use various tools to create visually appealing webpages that are easy to navigate. They also assess the needs of a website and its users, and design pages that meet those needs. Web designers often work with web developers to create a complete website.
-        p A #[strong web developer] is responsible for building and maintaining websites. They use coding languages to create site features and functionality, and often work with web designers to bring their vision to life. Web developers must have a strong understanding of how web browsers and servers work, as well as an ability to troubleshoot problems. In addition, they need to be familiar with various coding languages and frameworks.
-        P Assure Studios sometimes use the terms web development and web design interchangeably because we do both.
+     .col-xl-6
+      h2.mt-5 Our focus on responsive design
+      p Responsive design is a way to create websites so that the content adjusts to match the screen size on which it is viewed.
+      p The goal is to create a great user experience, no matter if a user is viewing your website on their desktop, tablet, or mobile phone.
+      p The reason responsive design is so vital is that everyone has a mobile device, mobile internet has grown 504% in daily media consumption since 2011. 
+      p If your website is not responsive you are losing customers and hurting your business.
+      p The benefits of responsive design are more customers and an increase in revenue for your business.
+      p If you need to check if your existing website is mobile-friendly, google has a free mobile test at 
+       | <a href="https://search.google.com/test/mobile-friendly">https://search.google.com/test/mobile-friendly</a>
+     .col-xl-6
+      img(src="./img/web-design-mobile-design.jpeg" alt="fort-worth-web-design-mobile-design")
+  .container-fluid.section
+        .row
+         .col-xl-6
+          img(src="./img/assure-security.jpeg" alt="assure-studios security picture")
+         .col-xl-6
+          h2 Our Focus on Security
+          h3 Is SSL certificate is properly installed?
+          p An SSL certificate is essential for any site.
+          p Your website should never be an HTTP site your website should employ an HTTPS certificate.
+          p Https secure your data and make it harder for hackers to steal vital data from your customers. 
+          p The HTTP protocol directly affects SEO because, In 2015, Google announced that HTTPS websites would rank higher than HTTP websites in Search Engine results pages.
+          h3 We schedule weekly backups.
+          p We create a copy of the data on your system to use for recovery in case your original data is lost or corrupted,
+          h3 We Check plugins regularly
+          p If you are using cms such as WordPress, The plugins you use to create customization need to be checked regularly for security vulnerabilities that might be exploited in the code.
+          p The benefit when we focus on security is knowing the little things you do to secure your website, will save you time and money.
 
-
+  .container-fluid.section
+        .row.align-items-center 
+          .col-xl-6
+           h2  Our Focus on Page Speed
+           p Page speed is a measure of how fast the content on a web page loads. Page speed is usually determined in two ways.
+           p page load time" (the time it takes to fully display the content on a specific page) or "time to first byte" (how long it takes for your browser to receive the first byte of information from the webserver).
+           p When your website is slow it also affects your SEO, page speed is a direct ranking factor.
+           p Google might rank your web page lower in the SERPs if the page takes a long time to load.
+           p A slow website also affects the user experience, studies show how users expect pages to load within two seconds, and after three seconds, up to 40% of users will abandon your site.
+           p A web page that loads under three seconds should be your target.
+           p To test your individual pages for page speed there are various tools,
+           p Including 
+            | <a href="https://pagespeed.web.dev/" title="pageSpeed Insights">PageSpeed Insights</a> and
+            | <a href="https://gtmetrix.com/" title="GT Metrix">GT Metrix</a>
+          .col-xl-6
+           img(src="./img/assure-pagespeed.jpeg" alt="assure-studios page speed picture")
+         
+  .container-fluid.section
+        .row.align-items-center 
+          .col-xl-6
+           h2  Our Focus on Accessibility
+           p Accessibility is the practice of making your websites usable by as many people as possible, this mainly refers to people with disabilities that cannot navigate a standard website with a mouse or keyboard.
+           p There should be no barriers that prevent people who experience varying degrees of visual, auditory, cognitive, speech, and physical disabilities to access and interact with your website.
+           p Most #{city}-based business starts locally and want to grow globally, but before you make your company global make sure your website is set up to handle the millions of disabled people that need your website to be accessible to them.
+           p The benefits of accessibility are building a broader customer base, and increasing brand loyalty through inclusion.
+          .col-xl-6
+           img(src="./img/assure-accessibilty.jpeg" alt="assure-studios Accessibilty picture")
 
   .container-fluid.section
     .row.align-items-center
       .col-xl-6
-        h2 What is Search Engine Optimization (SEO)
-        img(src="./img/assure-studios-search-engine-seo.jpeg")
+        img(src="./img/assure-seo.jpeg")
 
       .col-xl-6
+       h2 Our focus on SEO
        p Search engine optimization (SEO) is the science of getting pages to rank higher in search engines such as Google.
-       p It is vital, especially in a big city such as #{city} that people looking for the local services and products that your business provides, find your website first before they find your competitors.
-       p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your web site in a way that makes google happy,
-       | they will place it on the first page of the search engine results page or the (SERPs).
-       P More than two-thirds of all clicks on SERPs go to the top five results, that's why SEO is vital for every business.
-       p If you want to learn more about Search Engine Optimization click here &nbsp; <a href="./seo.html"> More about SEO</a>
-
+       p It is vital, especially in a big city such as Waco that people looking for the local services and products that your business provides, find your website first before they find your competitors.
+       p If search engines like Google trust your web page, think the content you have is more relevant than your competitors, and structure your website in a way that makes google happy, they will place it on the first page of the search engine results page or the (SERPs).
+       p More than two-thirds of all clicks on SERPs go to the top five results, that's why SEO is vital for every business.
+       P The benefits of SEO are an increase in organic discovery and traffic and increases in credibility and trust.
+       p If you want to learn more about Search Engine Optimization click here   
+        | <a href="./seo.html">More About Search Engine Optimization</a>
 
 
   .section.offer.container-fluid
     .row
-      include ../partials/web-site-prices-partial
-  include ../partials/dfw-local/web-development/dfw-locales
+      include ../pug/partials/web-site-prices-partial
+  include ../pug/partials/dfw-local/web-development/dfw-locales
 
 block callToAction
-  include ../partials/dfw-local/web-development/call-to-action
+  include ../pug/partials/dfw-local/web-development/call-to-action
+
 
